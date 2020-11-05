@@ -8,16 +8,19 @@
 
 <div id="mainWrapper" class="wrapper">
     <nav class="mainNav closed" id="mainNav">
-        <a href="javascript:void(0);" class="burgerIcon menuItemsToggle" id="navItemsToggle" onclick="myFunction()">
+        <a href="javascript:void(0);" class="burger-icon menu-items-toggle" id="nav-itemsToggle" onclick="myFunction()">
             <span></span>
             <span></span>
             <span></span>
         </a>
 
-        <a href="#home" class="homeLogo"><img src="./images/logo-mini-verde.png"/></a>
+        <a href="#home" class="home-logo">
+            <img class="logoBig" src="./svg/logo_big.svg"/>
+            <img class="logoSmall" src="./images/logo-mini-verde.png"/>
+        </a>
 
         
-        <ul id="navItems"  class="menuItems">
+        <ul id="nav-items"  class="menu-items">
             <li><a href="#news">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
@@ -27,29 +30,36 @@
             <li class="contactLink"><a href="#contact">Contact</a></li>
         </ul>
 
-        <a href="#contact" class="phoneLink">
-            <img src="./images/phone-verde.png"/>
+        <a href="#contact" class="phone-link">
+            <img src="./svg/phone-green.svg"/>
             <span class="tooltiptext">300 00 00 000</span>
         </a>
     </nav>
         
-    <div class="mainHeader">
+    <div class="main-header">
         <h1>The Leading Mobile & Web App Development Partner</h1>
         <button type="button"  />GET IN TOUCH</button>
         <img src="./images/header_img.png"/>
     </div>
 </div>
 
+
 <script>
     function myFunction() {
-      var burger = document.getElementById("navItemsToggle");
-      var burgerMenu = document.getElementById("navItems");
-      var mainNav = document.getElementById("mainNav");
+      let burger = document.getElementById("nav-itemsToggle");
+      let burgerMenu = document.getElementById("nav-items");
+      let mainNav = document.getElementById("mainNav");
       burger.classList.toggle("open");
       burgerMenu.classList.toggle("open");
       mainNav.classList.toggle("closed");
     }
     </script>
+
+    <!-- 
+    git add .
+    git commit —amend —no-edit
+    git push origin HEAD -f
+    -->
 
 </body>
 </html>
