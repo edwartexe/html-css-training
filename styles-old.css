@@ -1,0 +1,240 @@
+*{
+  font-family: 'GTWalsheim','Didact Gothic' , sans-serif;
+}
+
+body{
+  margin: 0;
+}
+.mainNav{
+
+    
+  display: flex;
+  justify-content: space-between;
+  margin: 26px 32px;
+}
+
+.burgerIcon{
+    position: relative;
+}
+
+.menuItems{
+    display: none;
+}
+
+/*.hidden{
+    position: absolute;
+    left: -1000px;
+}*/
+
+
+
+
+/*-----------------------------------------------------------------*/
+
+/*#navItemsToggle, .homeLogo, .phoneLink{
+  z-index: 1;
+}*/
+.closed #navItemsToggle, .closed .homeLogo,.closed .phoneLink{
+  filter: grayscale(0) brightness(0);
+}
+
+ #navItemsToggle
+ {
+   display: block;
+   position: relative;
+   /*top: 50px;
+   left: 50px;*/
+   
+   
+   -webkit-user-select: none;
+   user-select: none;
+ }
+ 
+ #navItemsToggle a
+ {
+   text-decoration: none;
+   color: #232323;
+   
+   transition: color 0.3s ease;
+ }
+ 
+ #navItemsToggle a:hover
+ {
+   color: tomato;
+ }
+ 
+ 
+ #navItemsToggle input
+ {
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+   
+   cursor: pointer;
+   
+   opacity: 0; /* hide this */
+   z-index: 2; /* and place it over the hamburger */
+   
+   -webkit-touch-callout: none;
+ }
+ 
+ /*
+  * Just a quick hamburger
+  */
+ #navItemsToggle span
+ {
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+   
+   background: #00343D;
+   border-radius: 3px;
+   
+   z-index: 1;
+   
+   transform-origin: 4px 0px;
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+ }
+ 
+ #navItemsToggle span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ 
+ #navItemsToggle span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+ 
+ /* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+ #navItemsToggle.open span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-10px, -10px);
+   background: #00D8A0;
+ }
+ 
+ /*
+  * But let's hide the middle one.
+  */
+ #navItemsToggle.open span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+ 
+ /*
+  * Ohyeah and the last one should go the other direction
+  */
+ #navItemsToggle.open span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(-10px, 10px);
+ }
+ 
+ /*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+ #navItems
+ {
+   position: absolute;
+   width: 100%;
+   margin: 60px 0 0 0;
+   padding: 60px 0 60px 0;
+   background: #FFFFFF;
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+   font-family: 'GTWalsheim','';
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+   list-style-type: none;
+ }
+ 
+ #navItems li
+ {
+   padding: 10px 0;
+   font-size: 22px;
+   text-align: center;
+   font-weight: bold;
+ }
+
+ .menuItems li{
+    display:inline;
+    font-size: 22px;
+ }
+
+ #navItems li a, .menuItems li a, .phoneLink
+ {
+   text-decoration: none;
+   color: #00343D;
+   
+ }
+ #navItems li a:hover, #navItems li a:active,
+ .menuItems li a:hover, .menuItems li a:active,
+ .phoneLink:hover, .phoneLink:active
+ {
+   font-style: italic;
+ }
+
+#navItems .contactLink{
+  margin-top: 50px;
+}
+
+#navItems .contactLink a{
+
+  background: #0BD8A2;
+  border-radius: 50px;
+  padding: 10px 25px;
+}
+
+ #navItems.open
+ {
+   transform: none; /* And let's slide it in from the left */
+ }
+
+
+ @media only screen and (min-width: 500px) {
+    .burgerIcon{
+        display: none;
+        }
+    .menuItems{
+        display: block;
+        margin: 0;
+    }
+    #navItems{
+        display: none;
+    }
+    #navItemsToggle
+    {
+        display: none;
+    }
+
+    body{
+      background-image: url("./images/header.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    #navItemsToggle, .homeLogo, .phoneLink{
+      filter: grayscale(0) brightness(0);
+    }
+}
+
+
+@media only screen and (min-width: 834px) {
+  body{
+    background-image: url("./images/header-big.png");
+  }
+}

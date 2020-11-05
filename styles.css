@@ -1,0 +1,286 @@
+*{
+  font-family: 'GTWalsheim','Didact Gothic' , sans-serif;
+}
+
+body{
+  margin: 0;
+}
+
+
+/*--------------------------------seccion NAV---------------------------------*/
+
+
+.mainNav{
+  display: flex;
+  justify-content: space-between;
+  margin: 26px 32px;
+}
+
+.closed.menuItemsToggle, .closed .homeLogo,.closed .phoneLink{
+  filter: grayscale(0) brightness(0);
+}
+
+.menuItemsToggle
+ {
+   display: block;
+   position: relative;
+   -webkit-user-select: none;
+   user-select: none;
+ }
+ 
+.menuItemsToggle a
+ {
+   text-decoration: none;
+   color: #232323;
+   
+   transition: color 0.3s ease;
+ }
+ 
+.menuItemsToggle a:hover
+ {
+   color: tomato;
+ }
+ 
+ 
+.menuItemsToggle input
+ {
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+   
+   cursor: pointer;
+   
+   opacity: 0; /* hide this */
+   z-index: 2; /* and place it over the hamburger */
+   
+   -webkit-touch-callout: none;
+ }
+ 
+ /*
+  * Just a quick hamburger
+  taken from https://codepen.io/erikterwan/pen/EVzeRP
+  */
+.menuItemsToggle span
+ {
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+   
+   background: #00343D;
+   border-radius: 3px;
+   
+   z-index: 1;
+   
+   transform-origin: 4px 0px;
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+ }
+ 
+.menuItemsToggle span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ 
+.menuItemsToggle span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+ 
+ /* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+.menuItemsToggle.open span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-10px, -10px);
+   background: #00D8A0;
+ }
+ 
+ /*
+  * But let's hide the middle one.
+  */
+.menuItemsToggle.open span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+ 
+ /*
+  * Ohyeah and the last one should go the other direction
+  */
+.menuItemsToggle.open span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(-10px, 10px);
+ }
+ 
+ /*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+.menuItems
+ {
+   position: absolute;
+   width: 100%;
+   margin: 60px 0 0 -32px;
+   padding: 60px 0 60px 0;
+   background: #FFFFFF;
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+   font-family: 'GTWalsheim','';
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+   list-style-type: none;
+ }
+ 
+.menuItems li
+ {
+   padding: 10px 0;
+   font-size: 1.2em;
+   text-align: center;
+   font-weight: bold;
+ }
+
+
+
+.menuItems li a,  .phoneLink
+ {
+   text-decoration: none;
+   color: #00343D;
+   
+ }
+.menuItems li a:hover,.menuItems li a:active,
+ .phoneLink:hover, .phoneLink:active
+ {
+   font-style: italic;
+ }
+
+#navItems .contactLink{
+  margin-top: 50px;
+}
+
+#navItems .contactLink a{
+
+  background: #0BD8A2;
+  border-radius: 50px;
+  padding: 10px 25px;
+}
+
+.menuItems.open
+ {
+   transform: none; /* And let's slide it in from the left */
+ }
+
+ /*-------------fin seccion de NAV --------------------*/
+
+ .mainHeader{
+   text-align: center;
+ }
+
+ h1 {
+  margin-top: 60px;
+  font-size: 1.6em;
+ }
+
+ .mainHeader button{
+  background: #fff;
+  border-radius: 50px;
+  padding: 10px 25px;
+  border: 0;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: 40px 0;
+ }
+
+ .mainHeader img{
+  width: 80%;
+  margin: 0 10%;
+  height: 300px;
+  object-fit: contain;
+ }
+
+
+ @media only screen and (min-width: 500px) {
+  body{
+    background-image: url("./images/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /*------------------------------------nav------------------------------------------*/
+  .menuItemsToggle, .homeLogo, .phoneLink{
+    filter: grayscale(0) brightness(0);
+  }
+
+  
+  /*------------------------------------header------------------------------------------*/
+ .mainHeader{
+    text-align: left;
+    padding: 0 5%;
+  }
+
+  h1 {
+  margin-top: 40px;
+  font-size: 2.3em;
+  width: 50%;
+  }
+
+  .mainHeader img{
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: auto;
+    margin: 0 5%;
+  }
+    
+}
+
+
+@media only screen and (min-width: 834px) {
+  body{
+    background-image: url("./images/header-big.png");
+  }
+
+  /*------------------------------------nav------------------------------------------*/
+  .burgerIcon{
+    display: none;
+  }
+  .menuItems{
+    position: relative;
+    display: inline-flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    background: none;
+    transform: none;
+  }
+  .menuItems li{
+    display:inline;
+    margin: 0 2%;
+  }
+  .menuItemsToggle {
+    display: none;
+  }
+  #navItems .contactLink a{
+    background: none;
+    padding: 0;
+  }
+  #navItems .contactLink{
+    margin-top: 0;
+    margin-left: 40px;
+  }
+
+  /*------------------------------------header------------------------------------------*/
+  .mainHeader{
+    padding: 0 10%;
+  }
+  .mainHeader img{display: none;}
+}
