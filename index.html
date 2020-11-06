@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
 <body>
 
 <div id="mainWrapper" class="wrapper">
-    <nav class="mainNav closed" id="mainNav">
-        <a href="javascript:void(0);" class="burger-icon menu-items-toggle" id="nav-itemsToggle" onclick="myFunction()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </a>
+	<nav class="mainNav closed" id="mainNav">
+		<button class="burger-icon menu-items-toggle" id="nav-itemsToggle" onclick="myFunction()">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
 
-        <a href="#home" class="home-logo">
-            <img class="logoBig" src="./svg/logo_big.svg"/>
-            <img class="logoSmall" src="./images/logo-mini-verde.png"/>
-        </a>
+		<a href="#home" class="home-logo">
+			<img class="logoBig" src="./assets/svg/logo_big.svg"/>
+			<img class="logoSmall" src="./assets/images/logo-mini-verde.png"/>
+		</a>
 
-        
-        <ul id="nav-items"  class="menu-items">
-            <li><a href="#news">Home</a><span></span></li>
-            <li><a href="#about">About</a><span></span></li>
-            <li><a href="#services">Services</a><span></span></li>
-            <li><a href="#work">Our Work</a><span></span></li>
-            <li><a href="#blog">Blog</a><span></span></li>
-            <li><a href="#career">Careers</a><span></span></li>
-            <li class="contactLink"><a href="#contact">Contact</a></li>
-        </ul>
 
-        <a href="#contact" class="phone-link">
-            <img src="./svg/phone-green.svg"/>
-            <span class="tooltiptext">300 00 00 000</span>
-        </a>
-    </nav>
-        
-    <div class="main-header">
-        <h1>The Leading Mobile & Web App Development Partner</h1>
-        <button type="button"  />GET IN TOUCH</button>
-        <img src="./images/header_img.png"/>
-    </div>
+		<ul id="nav-items"  class="menu-items">
+			<li><a href="#news">Home</a><span></span></li>
+			<li><a href="#about">About</a><span></span></li>
+			<li><a href="#services">Services</a><span></span></li>
+			<li><a href="#work">Our Work</a><span></span></li>
+			<li><a href="#blog">Blog</a><span></span></li>
+			<li><a href="#career">Careers</a><span></span></li>
+			<li class="contactLink"><a href="#contact">Contact</a></li>
+		</ul>
+
+		<a href="#contact" class="phone-link">
+			<img class="phone-link-image" src="./assets/svg/phone-green.svg"/>
+			<span class="tooltiptext">300 00 00 000</span>
+		</a>
+	</nav>
+
+	<div class="main-header">
+		<h1 class="main-title">The Leading Mobile & Web App Development Partner</h1>
+		<button type="button"  />GET IN TOUCH</button>
+		<img class="main-image" src="./assets/images/header_img.png"/>
+	</div>
 </div>
 
 
 <script>
-    function myFunction() {
-      let burger = document.getElementById("nav-itemsToggle");
-      let burgerMenu = document.getElementById("nav-items");
-      let mainNav = document.getElementById("mainNav");
-      burger.classList.toggle("open");
-      burgerMenu.classList.toggle("open");
-      mainNav.classList.toggle("closed");
-    }
-    </script>
+	function myFunction() {
+		let burger = document.getElementById("nav-itemsToggle");
+		let burgerMenu = document.getElementById("nav-items");
+		let mainNav = document.getElementById("mainNav");
+		burger.classList.toggle("open");
+		burgerMenu.classList.toggle("open");
+		mainNav.classList.toggle("closed");
+	}
+</script>
 
 </body>
 </html>
