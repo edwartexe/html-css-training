@@ -6,40 +6,78 @@
 </head>
 <body>
 
-<div id="mainWrapper" class="wrapper">
-	<nav class="mainNav closed" id="mainNav">
-		<button class="burger-icon menu-items-toggle" id="nav-itemsToggle" onclick="myFunction()">
-			<span></span>
-			<span></span>
-			<span></span>
-		</button>
+<nav class="main-nav closed" id="main-nav">
+	<button class="burger-icon menu-items-toggle" id="nav-itemsToggle" onclick="myFunction()">
+		<span></span>
+		<span></span>
+		<span></span>
+	</button>
 
-		<a href="#home" class="home-logo">
-			<img class="logoBig" src="./assets/svg/logo_big.svg"/>
-			<img class="logoSmall" src="./assets/images/logo-mini-verde.png"/>
-		</a>
+	<a href="#home" class="home-logo">
+		<img class="logoBig" src="./assets/svg/logo_big.svg"/>
+		<img class="logoSmall" src="./assets/images/logo-mini-verde.png"/>
+	</a>
 
 
-		<ul id="nav-items"  class="menu-items">
-			<li><a href="#news">Home</a><span></span></li>
-			<li><a href="#about">About</a><span></span></li>
-			<li><a href="#services">Services</a><span></span></li>
-			<li><a href="#work">Our Work</a><span></span></li>
-			<li><a href="#blog">Blog</a><span></span></li>
-			<li><a href="#career">Careers</a><span></span></li>
-			<li class="contactLink"><a href="#contact">Contact</a></li>
-		</ul>
+	<ul id="nav-items"  class="menu-items">
+		<li><a href="#news">Home</a><span></span></li>
+		<li><a href="#about">About</a><span></span></li>
+		<li><a href="#services">Services</a><span></span></li>
+		<li><a href="#work">Our Work</a><span></span></li>
+		<li><a href="#blog">Blog</a><span></span></li>
+		<li><a href="#career">Careers</a><span></span></li>
+		<li class="contactLink"><a href="#contact">Contact</a></li>
+	</ul>
 
-		<a href="#contact" class="phone-link">
-			<img class="phone-link-image" src="./assets/svg/phone-green.svg"/>
-			<span class="tooltiptext">300 00 00 000</span>
-		</a>
-	</nav>
+	<a href="#contact" class="phone-link">
+		<img class="phone-link-image" src="./assets/svg/phone-green.svg"/>
+		<span class="tooltiptext">300 00 00 000</span>
+	</a>
+</nav>
 
-	<div class="main-header">
+<div id="main-wrapper" class="main-wrapper">
+	<div id="section1" class="main-header">
 		<h1 class="main-title">The Leading Mobile & Web App Development Partner</h1>
-		<button type="button"  />GET IN TOUCH</button>
+		<button class="button-base button-header" type="button"  />GET IN TOUCH</button>
 		<img class="main-image" src="./assets/images/header_img.png"/>
+
+		<h2 class="secondary-title">what we do</h2>
+		<p>We bring your app ideas to reality. We stand out for our top web and mobile app development skills, though, we are so much more than that, we are a genuine strategic business partner.</p>
+	</div>
+
+
+	<h2 class="secondary-title">End-to-end Application Development</h2>
+	<div class="section-wrap reverse">
+		<div>
+			<h3 class="third-title">You Manage The Business, We Handle The Application</h3>
+			<p>We cover all the bits and pieces needed to develop a top-notch, innovative product, from strategy, to native apps, to the backend services. We code to very high standards and test continuously, which creates easy to maintain, high quality products.</p>
+		</div>
+		<img src="./assets/images/sec2_img1.jpg" />
+	</div>
+	<div class="section-wrap">
+		<div>
+			<h3 class="third-title">Mobile, Web & Enterprise </h3>
+			<p>Product strategy and planning
+				UX/UI design
+				Native iOS & Android app development
+				Backend server and architecture buildout
+				IoT and wearables
+				Gaming
+				Hybrid app development</p>
+		</div>
+		<img src="./assets/images/sec2_img2.jpg" />
+	</div>
+
+	<span class="division-line"></span>
+
+	<div class="section-wrap">
+		<div>
+			<h2 class="third-title">Explore our work</h2>
+			<h3 class="third-title">Results for innovative companies</h3>
+			<p>We help businesses ideate, strategize, iterate, and launch their Mobile Applications while keeping cost, timelines and objectives in mind.</p>
+			<button class="button-base button-secondary" type="button"  />EXPLORE</button>
+		</div>
+		<img src="./assets/images/sec3_img1.jpg" />
 	</div>
 </div>
 
@@ -48,10 +86,10 @@
 	function myFunction() {
 		let burger = document.getElementById("nav-itemsToggle");
 		let burgerMenu = document.getElementById("nav-items");
-		let mainNav = document.getElementById("mainNav");
+		let main-nav = document.getElementById("main-nav");
 		burger.classList.toggle("open");
 		burgerMenu.classList.toggle("open");
-		mainNav.classList.toggle("closed");
+		main-nav.classList.toggle("closed");
 	}
 </script>
 
