@@ -35,50 +35,112 @@
 	</a>
 </nav>
 
-<div id="main-wrapper" class="main-wrapper">
-	<div id="section1" class="main-header">
+
+
+
+<div id="main-wrapper">
+	<div id="section1" class="main-header main-wrapper">
 		<h1 class="main-title">The Leading Mobile & Web App Development Partner</h1>
 		<button class="button-base button-header" type="button"  />GET IN TOUCH</button>
 		<img class="main-image" src="./assets/images/header_img.png"/>
 
 		<h2 class="secondary-title">what we do</h2>
-		<p>We bring your app ideas to reality. We stand out for our top web and mobile app development skills, though, we are so much more than that, we are a genuine strategic business partner.</p>
+		<p>We bring your app ideas to reality. <br/> We stand out for our top web and mobile app development skills, though, we are so much more than that, we are a genuine strategic business partner.</p>
 	</div>
 
 
-	<h2 class="secondary-title">End-to-end Application Development</h2>
-	<div class="section-wrap reverse">
+
+	<h2 class="secondary-title section-margin main-wrapper">End-to-end Application Development</h2>
+
+	<div class="section-wrap reverse main-wrapper">
 		<div>
 			<h3 class="third-title">You Manage The Business, We Handle The Application</h3>
 			<p>We cover all the bits and pieces needed to develop a top-notch, innovative product, from strategy, to native apps, to the backend services. We code to very high standards and test continuously, which creates easy to maintain, high quality products.</p>
 		</div>
-		<img src="./assets/images/sec2_img1.jpg" />
+		<img src="./assets/images/sec2_img1_p.png" />
 	</div>
-	<div class="section-wrap">
+
+	<div class="section-wrap main-wrapper">
 		<div>
 			<h3 class="third-title">Mobile, Web & Enterprise </h3>
-			<p>Product strategy and planning
-				UX/UI design
-				Native iOS & Android app development
-				Backend server and architecture buildout
-				IoT and wearables
-				Gaming
-				Hybrid app development</p>
+			<ul class="main-list">
+				<li>Product strategy and planning</li>
+				<li>UX/UI design</li>
+				<li>Native iOS & Android app development</li>
+				<li>Backend server and architecture buildout</li>
+				<li>IoT and wearables</li>
+				<li>Gaming</li>
+				<li>Hybrid app development</li>
+			</ul>
 		</div>
 		<img src="./assets/images/sec2_img2.jpg" />
 	</div>
 
+
+
+
+	<div class="center-content main-wrapper">
+		<button class="button-base button-primary" type="button"  />GET IN TOUCH</button>
+	</div>
 	<span class="division-line"></span>
 
-	<div class="section-wrap">
-		<div>
-			<h2 class="third-title">Explore our work</h2>
+
+
+
+	<div class="explore-wrap main-wrapper">
+		<div class="explore-1">
+			<h2 class="secondary-title">Explore our work</h2>
 			<h3 class="third-title">Results for innovative companies</h3>
-			<p>We help businesses ideate, strategize, iterate, and launch their Mobile Applications while keeping cost, timelines and objectives in mind.</p>
-			<button class="button-base button-secondary" type="button"  />EXPLORE</button>
+			<p >We help businesses ideate, strategize, iterate, and launch their Mobile Applications while keeping cost, timelines and objectives in mind.</p>
 		</div>
-		<img src="./assets/images/sec3_img1.jpg" />
+		<img class="explore-2" src="./assets/images/sec3_img1.jpg" />
+		<button class="button-base button-secondary explore-3" type="button"  />EXPLORE</button>
 	</div>
+
+
+
+
+
+	<div class="col-wrap main-wrapper">
+		<img src="./assets/images/sec3_img2.jpg" />
+		<h2 class="secondary-title">Collaborative & Scientific Approach</h2>
+		<p>Our custom agile process puts you in control; reduces risk, increases transparency between our team and yours, and allows you to hit even aggressive timelines.</p>
+	</div>
+
+
+
+
+
+	<div id="section4" class="grid-wrap main-wrapper">
+		<div>
+			<img src="./assets/svg/hand_piece.svg" />
+			<h2 class="sthird-title">Enterprise Solutions</h2>
+			<p>We address all design and technical challenges, identify any risk areas and plan for them, and create a sound foundation for the product based on cost, timeline, and technology. We deliver your product blueprint, complete with the app's architecture.</p>
+		</div>
+
+		<div>
+			<img src="./assets/svg/gear.svg" />
+			<h2 class="sthird-title">Web & Mobile Development</h2>
+			<p>This is where the coding happens. Our team plans and delivers in sprints - Cross-functional team rallies around the sprint goals to deliver them on time and within budget. Each sprint results in an increment which is a potentially shippable product.</p>
+		</div>
+
+		<div>
+			<img src="./assets/svg/design.svg" />
+			<h2 class="sthird-title">Design</h2>
+			<p>Design gives a more complete story of the app, encompassing wireframes, storyboards,  user flows, and prototyping.</p>
+		</div>
+
+		<div></div>
+	</div>
+
+
+	<div class="center-content main-wrapper">
+		<button class="button-base button-primary" type="button"  />GET IN TOUCH</button>
+	</div>
+
+	<h2 class="secondary-title trust-bg">Some of the Brands that Trust Us</h2>
+
+
 </div>
 
 
@@ -86,10 +148,10 @@
 	function myFunction() {
 		let burger = document.getElementById("nav-itemsToggle");
 		let burgerMenu = document.getElementById("nav-items");
-		let main-nav = document.getElementById("main-nav");
+		let mainnav = document.getElementById("main-nav");
 		burger.classList.toggle("open");
 		burgerMenu.classList.toggle("open");
-		main-nav.classList.toggle("closed");
+		mainnav.classList.toggle("closed");
 	}
 </script>
 
