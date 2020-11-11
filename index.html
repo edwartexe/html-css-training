@@ -6,20 +6,20 @@
 </head>
 <body>
 
-<nav class="main-nav closed" id="main-nav">
-	<button class="burger-icon menu-items-toggle" id="nav-itemsToggle" onclick="myFunction()">
+<nav class="nav closed" id="nav">
+	<button class="nav_burger nav_menu-toggle" id="nav-itemsToggle" onclick="myFunction()">
 		<span></span>
 		<span></span>
 		<span></span>
 	</button>
 
-	<a href="#home" class="home-logo">
-		<img class="logoBig" src="./assets/svg/logo_big.svg"/>
-		<img class="logoSmall" src="./assets/images/logo-mini-verde.png"/>
+	<a href="#home" class="nav_logo">
+		<img class="nav_logo--big" src="./assets/svg/logo_big.svg"/>
+		<img class="nav_logo--small" src="./assets/svg/logo_mini_green.svg"/>
 	</a>
 
 
-	<ul id="nav-items"  class="menu-items">
+	<ul id="nav-items"  class="nav_menu">
 		<li><a href="#news">Home</a><span></span></li>
 		<li><a href="#about">About</a><span></span></li>
 		<li><a href="#services">Services</a><span></span></li>
@@ -29,126 +29,181 @@
 		<li class="contactLink"><a href="#contact">Contact</a></li>
 	</ul>
 
-	<a href="#contact" class="phone-link">
-		<img class="phone-link-image" src="./assets/svg/phone-green.svg"/>
-		<span class="tooltiptext">300 00 00 000</span>
+	<a href="#contact" class="nav_phone">
+		<img class="nav_phone-image" src="./assets/svg/phone-green.svg"/>
+		<span class="nav_tooltip">300 00 00 000</span>
 	</a>
 </nav>
 
 
 
 
-<div id="main-wrapper">
-	<div id="section1" class="main-header main-wrapper">
-		<h1 class="main-title">The Leading Mobile & Web App Development Partner</h1>
-		<button class="button-base button-header" type="button"  />GET IN TOUCH</button>
-		<img class="main-image" src="./assets/images/header_img.png"/>
-
-		<h2 class="secondary-title">what we do</h2>
-		<p>We bring your app ideas to reality. <br/> We stand out for our top web and mobile app development skills, though, we are so much more than that, we are a genuine strategic business partner.</p>
-	</div>
 
 
 
-	<h2 class="secondary-title section-margin main-wrapper">End-to-end Application Development</h2>
+<div class="section1 global-padding">
+	<h1 class="section1_title">The Leading Mobile & Web App Development Partner</h1>
+	<button class="button-base button-header section1_btn" type="button"  />GET IN TOUCH</button>
+	<img class="section1_img" src="./assets/images/header_img.png"/>
 
-	<div class="section-wrap reverse main-wrapper">
-		<div>
-			<h3 class="third-title">You Manage The Business, We Handle The Application</h3>
-			<p>We cover all the bits and pieces needed to develop a top-notch, innovative product, from strategy, to native apps, to the backend services. We code to very high standards and test continuously, which creates easy to maintain, high quality products.</p>
-		</div>
-		<img src="./assets/images/sec2_img1_p.png" />
-	</div>
-
-	<div class="section-wrap main-wrapper">
-		<div>
-			<h3 class="third-title">Mobile, Web & Enterprise </h3>
-			<ul class="main-list">
-				<li>Product strategy and planning</li>
-				<li>UX/UI design</li>
-				<li>Native iOS & Android app development</li>
-				<li>Backend server and architecture buildout</li>
-				<li>IoT and wearables</li>
-				<li>Gaming</li>
-				<li>Hybrid app development</li>
-			</ul>
-		</div>
-		<img src="./assets/images/sec2_img2.jpg" />
-	</div>
-
-
-
-
-	<div class="center-content main-wrapper">
-		<button class="button-base button-primary" type="button"  />GET IN TOUCH</button>
-	</div>
-	<span class="division-line"></span>
-
-
-
-
-	<div class="explore-wrap main-wrapper">
-		<div class="explore-1">
-			<h2 class="secondary-title">Explore our work</h2>
-			<h3 class="third-title">Results for innovative companies</h3>
-			<p >We help businesses ideate, strategize, iterate, and launch their Mobile Applications while keeping cost, timelines and objectives in mind.</p>
-		</div>
-		<img class="explore-2" src="./assets/images/sec3_img1.jpg" />
-		<button class="button-base button-secondary explore-3" type="button"  />EXPLORE</button>
-	</div>
-
-
-
-
-
-	<div class="col-wrap main-wrapper">
-		<img src="./assets/images/sec3_img2.jpg" />
-		<h2 class="secondary-title">Collaborative & Scientific Approach</h2>
-		<p>Our custom agile process puts you in control; reduces risk, increases transparency between our team and yours, and allows you to hit even aggressive timelines.</p>
-	</div>
-
-
-
-
-
-	<div id="section4" class="grid-wrap main-wrapper">
-		<div>
-			<img src="./assets/svg/hand_piece.svg" />
-			<h2 class="sthird-title">Enterprise Solutions</h2>
-			<p>We address all design and technical challenges, identify any risk areas and plan for them, and create a sound foundation for the product based on cost, timeline, and technology. We deliver your product blueprint, complete with the app's architecture.</p>
-		</div>
-
-		<div>
-			<img src="./assets/svg/gear.svg" />
-			<h2 class="sthird-title">Web & Mobile Development</h2>
-			<p>This is where the coding happens. Our team plans and delivers in sprints - Cross-functional team rallies around the sprint goals to deliver them on time and within budget. Each sprint results in an increment which is a potentially shippable product.</p>
-		</div>
-
-		<div>
-			<img src="./assets/svg/design.svg" />
-			<h2 class="sthird-title">Design</h2>
-			<p>Design gives a more complete story of the app, encompassing wireframes, storyboards,  user flows, and prototyping.</p>
-		</div>
-
-		<div></div>
-	</div>
-
-
-	<div class="center-content main-wrapper">
-		<button class="button-base button-primary" type="button"  />GET IN TOUCH</button>
-	</div>
-
-	<h2 class="secondary-title trust-bg">Some of the Brands that Trust Us</h2>
-
-
+	<h2 class="section1_title secondary-title center-content">what we do</h2>
+	<p class="section1_p center-content">We bring your app ideas to reality. <br/> We stand out for our top web and mobile app development skills, though, we are so much more than that, we are a genuine strategic business partner.</p>
 </div>
+
+
+
+<h2 class="secondary-title section-margin global-padding center-content endtoend-title">End-to-end Application Development</h2>
+
+<div class="endtoend reverse global-padding">
+	<div class="entoend_text">
+		<h3 class="third-title">You Manage The Business, We Handle The Application</h3>
+		<p>We cover all the bits and pieces needed to develop a top-notch, innovative product, from strategy, to native apps, to the backend services. We code to very high standards and test continuously, which creates easy to maintain, high quality products.</p>
+	</div>
+	<img class="endtoend_img center-block" src="./assets/images/sec2_img1_p.png" />
+</div>
+
+<div class="endtoend global-padding">
+	<div class="entoend_text">
+		<h3 class="third-title">Mobile, Web & Enterprise </h3>
+		<ul class="main-list">
+			<li>Product strategy and planning</li>
+			<li>UX/UI design</li>
+			<li>Native iOS & Android app development</li>
+			<li>Backend server and architecture buildout</li>
+			<li>IoT and wearables</li>
+			<li>Gaming</li>
+			<li>Hybrid app development</li>
+		</ul>
+	</div>
+	<img class="endtoend_img center-block"  src="./assets/images/sec2_img2.jpg" />
+</div>
+
+<div class="center-content-mid global-padding">
+	<button class="button-base button-primary endtoend_button" type="button"  />GET IN TOUCH</button>
+</div>
+
+
+
+
+<span class="division-line"></span>
+
+
+
+
+<div class="explore-wrap global-padding">
+	<div class="explore_1">
+		<h2 class="secondary-title">Explore our work</h2>
+		<h3 class="third-title">Results for innovative companies</h3>
+		<p >We help businesses ideate, strategize, iterate, and launch their Mobile Applications while keeping cost, timelines and objectives in mind.</p>
+	</div>
+	<img class="explore_2 center-block" src="./assets/images/sec3_img1.jpg" />
+	<button class="button-base button-secondary explore_3 center-block" type="button"  />EXPLORE</button>
+</div>
+
+
+
+
+
+<div class="collaborative global-padding">
+	<img class="collaborative_img" src="./assets/images/sec3_img2.jpg" />
+	<h2 class="secondary-title">Collaborative & Scientific Approach</h2>
+	<p>Our custom agile process puts you in control; reduces risk, increases transparency between our team and yours, and allows you to hit even aggressive timelines.</p>
+</div>
+
+
+
+
+
+<div id="section4" class="grid global-padding">
+	<div class="grid_block">
+		<img src="./assets/svg/hand_piece.svg" />
+		<h2 class="third-title">Enterprise Solutions</h2>
+		<p>We address all design and technical challenges, identify any risk areas and plan for them, and create a sound foundation for the product based on cost, timeline, and technology. We deliver your product blueprint, complete with the app's architecture.</p>
+	</div>
+
+	<div class="grid_block">
+		<img src="./assets/svg/gear.svg" />
+		<h2 class="third-title">Web & Mobile Development</h2>
+		<p>This is where the coding happens. Our team plans and delivers in sprints - Cross-functional team rallies around the sprint goals to deliver them on time and within budget. Each sprint results in an increment which is a potentially shippable product.</p>
+	</div>
+
+	<div class="grid_block">
+		<img src="./assets/svg/design.svg" />
+		<h2 class="third-title">Design</h2>
+		<p>Design gives a more complete story of the app, encompassing wireframes, storyboards,  user flows, and prototyping.</p>
+	</div>
+
+	<div></div>
+</div>
+
+
+<div class="center-content-mid global-padding">
+	<button class="button-base button-primary collaborative_button" type="button"  />GET IN TOUCH</button>
+</div>
+
+
+
+
+<h2 class="secondary-title trust-bg center-content">Some of the Brands that Trust Us</h2>
+
+
+
+<div class="brands global-padding">
+	
+</div>
+
+
+
+
+
+
+<footer class="footer global-padding">
+	<div class="footer_logo">
+		<img src="./assets/svg/logo_big.svg"/>
+	</div>
+
+	<div class="footer_block">
+		<h2 class="third-title">Our Specialities</h2>
+		<ul class="footer_list">
+			<li>Fintech</li>
+			<li>Medtech</li>
+			<li>Hightech</li>
+			<li>Retail</li>
+			<li>IOT</li>
+		</ul>
+	</div>
+	<div class="footer_block">
+		<h2 class="third-title">Locations</h2>
+		<ul class="footer_list">
+			<li>Chicago, USA</li>
+			<li>Miami, USA</li>
+			<li>San Francisco, USA</li>
+			<li>New York City, USA</li>
+			<li>Barranquilla, CO</li>
+		</ul>
+	</div>
+
+	<div class="footer_bottom">
+		<p class="footer_call">call us</p>
+		<h2 class="third-title">+1-888-840-3252</h2>
+		<div class="footer_logos">
+			<img src="./assets/svg/facebook.svg"/>
+			<img src="./assets/svg/footer_generic.svg"/>
+			<img src="./assets/svg/footer_generic.svg"/>
+			<img src="./assets/svg/youtube.svg"/>
+		</div>
+		<p class="footer_info">© 2007 -2020 Koombea, Inc.  All Rights Reserved Privacy policy   /   Site map </p>
+	</div>
+
+	<div class="ending"></div>
+</footer>
 
 
 <script>
 	function myFunction() {
 		let burger = document.getElementById("nav-itemsToggle");
 		let burgerMenu = document.getElementById("nav-items");
-		let mainnav = document.getElementById("main-nav");
+		let mainnav = document.getElementById("nav");
 		burger.classList.toggle("open");
 		burgerMenu.classList.toggle("open");
 		mainnav.classList.toggle("closed");
