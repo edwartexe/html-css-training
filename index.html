@@ -47,7 +47,7 @@
 
   <div class="section1 global-padding">
     <h1 class="section1_title main-title">The Leading Mobile & Web App Development Partner</h1>
-    <button class="button-base button-header section1_btn" type="button"  />GET IN TOUCH</button>
+    <button class="section1_btn button-base button-header" type="button"  />GET IN TOUCH</button>
     <img class="section1_img" src="./assets/images/header_img.png"/>
   </div>
   <h2 class="section1_subtitle secondary-title center-content">what we do</h2>
@@ -105,7 +105,7 @@
   <div class="collaborative global-padding">
     <img class="collaborative_img" src="./assets/images/sec3_img2.jpg" />
     <h2 class="main-title collaborative_title">Collaborative & Scientific Approach</h2>
-    <p>Our custom agile process puts you in control; reduces risk, increases transparency between our team and yours, and allows you to hit even aggressive timelines.</p>
+    <p class="collaborative_text">Our custom agile process puts you in control; reduces risk, increases transparency between our team and yours, and allows you to hit even aggressive timelines.</p>
   </div>
 
 
@@ -152,7 +152,7 @@
     <div class="brand_slider">
       <img class="brand_logo" src="./assets/svg/logo_luna.svg" />
       <img class="brand_logo" src="./assets/svg/logo_payix.svg" />
-      <img class="brand_logo" src="./assets/svg/logo_flight.svg" />
+      <img class="brand_logo " src="./assets/svg/logo_flight.svg" />
       <img class="brand_logo" src="./assets/svg/logo_doit.svg" />
       <img class="brand_logo" src="./assets/svg/logo_libc.svg" />
     </div>
@@ -166,7 +166,7 @@
       </div>
 
       <div class="card">
-        <div class="card_ring"><img class="card_img" src="./assets/images/card_example.png"/></div>
+        <div class="card_ring "><img class="card_img" src="./assets/images/card_example.png"/></div>
         <p class="card_text">““With Koombea now by our side, we’re achieving our client on- boarding goals and maximizing revenue opportunities”"</p>
         <p class="card_name">Tiffany Wycoff</p>
         <p class="card_info">Payix CEO</p>
@@ -199,7 +199,7 @@
       <p class="industry_name">Hi tech</p>
     </div>
     <div class="industry">
-      <img class="industry_img" src="./assets/images/Illustration/Retail.png"/>
+      <img class="industry_img " src="./assets/images/Illustration/Retail.png"/>
       <p class="industry_name">Retail</p>
     </div>
     <div class="industry">
@@ -218,7 +218,7 @@
 
   <div class="partner-slider">
     <img class="partner_logo" src="./assets/svg/partnerAWS.svg" />
-    <img class="partner_logo" src="./assets/svg/partnerClutch.svg" />
+    <img class="partner_logo " src="./assets/svg/partnerClutch.svg" />
     <img class="partner_logo" src="./assets/svg/partnerShop.svg" />
   </div>
 
@@ -231,7 +231,7 @@
     </div>
 
     <div class="footer_block">
-      <h2 class="third-title">Our Specialities</h2>
+      <h2 class="footer_title">Our Specialities</h2>
       <ul class="footer_list">
         <li>Fintech</li>
         <li>Medtech</li>
@@ -241,7 +241,7 @@
       </ul>
     </div>
     <div class="footer_block">
-      <h2 class="third-title">Locations</h2>
+      <h2 class="footer_title">Locations</h2>
       <ul class="footer_list">
         <li>Chicago, USA</li>
         <li>Miami, USA</li>
@@ -253,7 +253,7 @@
 
     <div class="footer_bottom">
       <p class="footer_call">call us</p>
-      <h2 class="third-title">+1-888-840-3252</h2>
+      <h2 class="footer_title">+1-888-840-3252</h2>
       <div class="footer_logos">
         <img src="./assets/svg/facebook.svg"/>
         <img src="./assets/svg/footer_generic.svg"/>
@@ -265,6 +265,10 @@
 
     <div class="ending"></div>
   </footer>
+
+
+
+
 
   <script>
     function myFunction() {
@@ -278,49 +282,120 @@
 
     $(document).ready(function(){
       $('.brand_slider').slick({
-        infinite: true,
-        arrows: false,
-        speed: 300,
-        slidesToShow: 1,
-        centerMode: true,
         variableWidth: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        centerMode: true,
+        arrows: false,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        initialSlide:2,
+        responsive: [
+          {breakpoint: 1160,
+            settings: {
+              infinite: true,
+              mobileFirst:true,
+              pauseOnFocus:true,
+              arrows: false,
+              speed: 300,
+              slidesToShow: 1,
+              centerMode: true,
+              variableWidth: true,
+              autoplay: true,
+              autoplaySpeed: 2000,
+            }
+          }
+        ]
       });
 
       $('.card-slider').slick({
-        dots: true,
-        arrows: false,
-        infinite: true,
-        adaptiveHeight:true,
         variableWidth: true,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        centerMode: true,
+        arrows: false,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        initialSlide:1,
+        responsive: [
+          {breakpoint: 1440,
+            settings: {
+              dots: true,
+              arrows: false,
+              infinite: true,
+              mobileFirst:true,
+              pauseOnFocus:true,
+              variableWidth: true,
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 2000,
+            }
+          }
+        ]
       });
 
       $('.industry-slider').slick({
-        infinite: true,
-        arrows: false,
         variableWidth: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        centerMode: true,
+        arrows: false,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        initialSlide:2,
+        responsive: [
+          {breakpoint: 1440,
+            settings: {
+              infinite: true,
+              mobileFirst:true,
+              pauseOnFocus:true,
+              arrows: false,
+              variableWidth: true,
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 2000,
+            }
+          }
+        ]
       });
 
       $('.partner-slider').slick({
-        infinite: true,
-        arrows: false,
-        speed: 300,
-        slidesToShow: 1,
-        centerMode: true,
         variableWidth: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        centerMode: true,
+        arrows: false,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        initialSlide:1,
+        responsive: [
+          {breakpoint: 833,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              initialSlide:1,
+            }
+          }
+        ]
       });
-    });
+    
+  });
+
+  /*function deslickify(){
+    $('.brand_slider').slick("unslick");
+
+    $('.card-slider').slick("unslick");
+
+    $('.industry-slider').slick("unslick");
+
+    $('.partner-slider').slick("unslick");
+  }
+
+
+  slickify();
+
+  $(window).resize(function(){
+    var $windowWidth = $(document).width();
+    if ($windowWidth < 1441) {
+        slickify();   
+    }else{
+        $deslickify();
+    }
+  });*/
   </script>
 </body>
 </html>
