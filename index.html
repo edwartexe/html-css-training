@@ -7,9 +7,12 @@
   <meta name = "description" content = "Training how to be a better front end." />
   <meta name="robots" content="noindex" />
   <link rel="stylesheet" href="./assets/styles/styles.css">
+  <link rel="icon" type="image/png" href="./assets/svg/logo_mini_green.svg">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
   <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+  <script type="text/javascript" src="./slick/slick.min.js" defer></script>
 </head>
 <body>
 
@@ -37,17 +40,23 @@
     </ul>
 
     <a href="#contact" class="nav_phone">
-      <img class="nav_phone-image" src="./assets/svg/phone-green.svg"/>
+      <img class="nav_phone-image" src="./assets/svg/phone-green.svg" alt="telefono"/>
       <span class="nav_tooltip">300 00 00 000</span>
     </a>
   </nav>
 
 
 
-  <div class="banner global-padding">
+  <div class="banner">
     <h1 class="banner_title main-title">The Leading Mobile & Web App Development Partner</h1>
     <button class="banner_btn button-base button-header" type="button"  />GET IN TOUCH</button>
-    <img class="banner_img" src="./assets/images/header_img.png"/>
+    <img class="banner_img" src="./assets/images/header_img.png" alt="banner image"/>
+
+    <picture class="banner_ring">
+      <source media="(min-width:1441px)" srcset="./assets/svg/banner_ring_big.svg">
+      <source media="(min-width:834px)" srcset="./assets/svg/banner_ring_mid.svg">
+      <img src="./assets/svg/banner_ring_mid.svg" alt="the ring" style="width:auto;">
+    </picture>
   </div>
 
 
@@ -67,7 +76,7 @@
         <h3 class="third-title endtoend_subtitle">You Manage The Business, We Handle The Application</h3>
         <p class="endtoend_subtext">We cover all the bits and pieces needed to develop a top-notch, innovative product, from strategy, to native apps, to the backend services. We code to very high standards and test continuously, which creates easy to maintain, high quality products.</p>
       </div>
-      <img class="endtoend_img center-block" src="./assets/images/sec2_img1_p.png" />
+      <img class="endtoend_img center-block" src="./assets/images/sec2_img1_p.png" alt="you manage"/>
     </div>
   
     <div class="endtoend_row global-padding">
@@ -83,7 +92,7 @@
           <li>Hybrid app development</li>
         </ul>
       </div>
-      <img class="endtoend_img--right center-block"  src="./assets/images/sec2_img2.jpg" />
+      <img class="endtoend_img--right center-block"  src="./assets/images/sec2_img2.jpg" alt="we handle"/>
     </div>
   
     <div class="center-content-mid global-padding">
@@ -102,15 +111,16 @@
       <h2 class="main-title">Explore our work</h2>
       <h3 class="third-title">Results for innovative companies</h3>
       <p >We help businesses ideate, strategize, iterate, and launch their Mobile Applications while keeping cost, timelines and objectives in mind.</p>
+      <button class="button-base button-secondary explore_3 center-block display-mid" type="button"  />EXPLORE</button>
     </div>
-    <img class="explore_2 center-block" src="./assets/images/sec3_img1.jpg" />
-    <button class="button-base button-secondary explore_3 center-block" type="button"  />EXPLORE</button>
+    <img class="explore_2 center-block" src="./assets/images/sec3_img1.jpg" alt="cellphone example"/>
+    <button class="button-base button-secondary explore_3 center-block display-small" type="button"  />EXPLORE</button>
   </div>
 
 
 
   <div class="collaborative global-padding">
-    <img class="collaborative_img" src="./assets/images/sec3_img2.jpg" />
+    <img class="collaborative_img" src="./assets/images/sec3_img2.jpg" alt="collaboration"/>
     <h2 class="main-title collaborative_title">Collaborative & Scientific Approach</h2>
     <p class="collaborative_text">Our custom agile process puts you in control; reduces risk, increases transparency between our team and yours, and allows you to hit even aggressive timelines.</p>
   </div>
@@ -121,7 +131,7 @@
     <div id="section4" class="grid global-padding">
       <div class="grid_block">
         <div class="grid_titleblock">
-          <img class="grid_icon" src="./assets/svg/hand_piece.svg" />
+          <img class="grid_icon" src="./assets/svg/hand_piece.svg" alt="solutions"/>
           <h2 class="grid_title third-title">Enterprise Solutions</h2>
         </div>
         <p>We address all design and technical challenges, identify any risk areas and plan for them, and create a sound foundation for the product based on cost, timeline, and technology. We deliver your product blueprint, complete with the app's architecture.</p>
@@ -129,7 +139,7 @@
 
       <div class="grid_block">
         <div class="grid_titleblock">
-          <img class="grid_icon" src="./assets/svg/gear.svg" />
+          <img class="grid_icon" src="./assets/svg/gear.svg" alt="gear"/>
           <h2 class="grid_title third-title">Web & Mobile Development</h2>
         </div>
         <p>This is where the coding happens. Our team plans and delivers in sprints - Cross-functional team rallies around the sprint goals to deliver them on time and within budget. Each sprint results in an increment which is a potentially shippable product.</p>
@@ -137,7 +147,7 @@
 
       <div class="grid_block">
         <div class="grid_titleblock">
-          <img class="grid_icon" src="./assets/svg/design.svg" />
+          <img class="grid_icon" src="./assets/svg/design.svg" alt="design"/>
           <h2 class="grid_title third-title">Design</h2>
         </div>
         <p>Design gives a more complete story of the app, encompassing wireframes, storyboards,  user flows, and prototyping.</p>
@@ -160,30 +170,30 @@
     <h2 class="main-title trust-bg center-content global-padding">Some of the Brands that Trust Us</h2>  
     <div class="brands global-padding">
       <div class="brand_slider">
-        <img class="brand_logo" src="./assets/svg/logo_luna.svg" />
-        <img class="brand_logo" src="./assets/svg/logo_payix.svg" />
-        <img class="brand_logo " src="./assets/svg/logo_flight.svg" />
-        <img class="brand_logo" src="./assets/svg/logo_doit.svg" />
-        <img class="brand_logo" src="./assets/svg/logo_libc.svg" />
+        <img class="brand_logo" src="./assets/svg/logo_luna.svg" alt="brand luna"/>
+        <img class="brand_logo" src="./assets/svg/logo_payix.svg" alt="brand payix"/>
+        <img class="brand_logo " src="./assets/svg/logo_flight.svg" alt="brand flight"/>
+        <img class="brand_logo" src="./assets/svg/logo_doit.svg" alt="brand do it"/>
+        <img class="brand_logo" src="./assets/svg/logo_libc.svg" alt="brand libc"/>
       </div>
   
       <div class="card-slider">
         <div class="card">
-          <div class="card_ring"><img class="card_img" src="./assets/images/card_example.png"/></div>
+          <div class="card_ring"><img class="card_img" src="./assets/images/card_example.png" alt="card"/></div>
           <p class="card_text">“It seemed like a good sign to us that somebody was being a real critical and analytical partner."</p>
           <p class="card_name">Tiffany Wycoff</p>
           <p class="card_info">Co-founder of LINC</p>
         </div>
   
         <div class="card">
-          <div class="card_ring "><img class="card_img" src="./assets/images/card_example.png"/></div>
+          <div class="card_ring "><img class="card_img" src="./assets/images/card_example.png" alt="card"/></div>
           <p class="card_text">““With Koombea now by our side, we’re achieving our client on- boarding goals and maximizing revenue opportunities”"</p>
           <p class="card_name">Tiffany Wycoff</p>
           <p class="card_info">Payix CEO</p>
         </div>
   
         <div class="card">
-          <div class="card_ring"><img class="card_img" src="./assets/images/card_example.png"/></div>
+          <div class="card_ring"><img class="card_img" src="./assets/images/card_example.png" alt="card"/></div>
           <p class="card_text">“"Koombea is a truly full-service development agency, and their holistic and consultative approach enabled huge cost savings on our end.""</p>
           <p class="card_name">Mathew Southern</p>
           <p class="card_info">Founder/CEO Southern Straps</p>
@@ -201,23 +211,23 @@
 
     <div class="industry-slider">
       <div class="industry_card">
-        <img class="industry_img" src="./assets/images/Illustration/MedTech.png"/>
+        <img class="industry_img" src="./assets/images/Illustration/MedTech.png" alt="med tech"/>
         <p class="industry_name">Med tech</p>
       </div>
       <div class="industry_card">
-        <img class="industry_img" src="./assets/images/Illustration/HitTech.png"/>
+        <img class="industry_img" src="./assets/images/Illustration/HitTech.png" alt="hi tech"/>
         <p class="industry_name">Hi tech</p>
       </div>
       <div class="industry_card">
-        <img class="industry_img " src="./assets/images/Illustration/Retail.png"/>
+        <img class="industry_img " src="./assets/images/Illustration/Retail.png" alt="retail"/>
         <p class="industry_name">Retail</p>
       </div>
       <div class="industry_card">
-        <img class="industry_img" src="./assets/images/Illustration/IoT.png"/>
+        <img class="industry_img" src="./assets/images/Illustration/IoT.png" alt="iot"/>
         <p class="industry_name">IoT</p>
       </div>
       <div class="industry_card">
-        <img class="industry_img" src="./assets/images/Illustration/FintTech.png"/>
+        <img class="industry_img" src="./assets/images/Illustration/FintTech.png" alt="fint tech"/>
         <p class="industry_name">Fin tech</p>
       </div>
     </div>
@@ -228,9 +238,9 @@
   <div class="partners">  
     <h2 class="main-title center-content global-padding partner-title">Partnerships and Recognitions</h2>
     <div class="partner-slider">
-      <img class="partner_logo" src="./assets/svg/partnerAWS.svg" />
-      <img class="partner_logo " src="./assets/svg/partnerClutch.svg" />
-      <img class="partner_logo" src="./assets/svg/partnerShop.svg" />
+      <img class="partner_logo" src="./assets/svg/partnerAWS.svg" alt="partner aws"/>
+      <img class="partner_logo " src="./assets/svg/partnerClutch.svg" alt="partner clutch"/>
+      <img class="partner_logo" src="./assets/svg/partnerShop.svg" alt="partner shop"/>
     </div>
   </div>
 
@@ -240,7 +250,7 @@
 
   <footer class="footer global-padding">
     <div class="footer_logo">
-      <img src="./assets/svg/logo_big.svg"/>
+      <img src="./assets/svg/logo_big.svg" alt="logo"/>
     </div>
 
     <div class="footer_block">
@@ -268,10 +278,10 @@
       <p class="footer_call">call us</p>
       <h2 class="footer_title">+1-888-840-3252</h2>
       <div class="footer_logos">
-        <img src="./assets/svg/facebook.svg"/>
-        <img src="./assets/svg/footer_generic.svg"/>
-        <img src="./assets/svg/footer_generic.svg"/>
-        <img src="./assets/svg/youtube.svg"/>
+        <img src="./assets/svg/facebook.svg" alt="facebook"/>
+        <img src="./assets/svg/footer_generic.svg" alt="icon"/>
+        <img src="./assets/svg/footer_generic.svg" alt="icon"/>
+        <img src="./assets/svg/youtube.svg" alt="youtube"/>
       </div>
       <p class="footer_info">© 2007 -2020 Koombea, Inc.  All Rights Reserved Privacy policy   /   Site map </p>
     </div>
@@ -282,7 +292,6 @@
 
 
 
-<script type="text/javascript" src="./slick/slick.min.js" defer></script>
 <script>
   function myFunction() {
     let burger = document.getElementsByClassName("nav_menu-toggle")[0];
