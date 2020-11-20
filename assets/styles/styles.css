@@ -252,11 +252,7 @@ transition: max-height 0.25s ease-out;
 }
 
 .banner_ring {
-  width: auto;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0.5;
+  display: none;
 }
 
 .main-title {
@@ -751,6 +747,15 @@ transition: max-height 0.25s ease-out;
     /*bottom:0;*/
     top:23px;
     width: auto;
+  }
+
+  .banner_ring {
+    display: block;
+    width: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
   }
 
   .whatwedo_p {
