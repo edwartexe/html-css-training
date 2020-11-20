@@ -1,0 +1,18 @@
+* no tiene favicon
+* las imagenes no son retina ready
+✓ al documento le falta un meta tag title
+* muchas imagenes no tienen el atributo alt
+✓ no veo el tag lang
+✓ ni el tag robots
+* importas jquery con script tag - 10 puntos para grifindor
+✓ use <picture>
+
+things to improve:
+✓ Cuando agregas un js, lo agregas siempre al final y preferibelmente con un defer. 
+✓ Tienes tres versiones de jquery, y segun yo no tienes necesidad de importar si quiera uno porque slick ya lo trae consigo
+- tu clases estan muy bloated. En el sentido que estan muy largas, entre mas largas sean las clases mas pesa el documento.
+- tus imagenes saltan cuando cargan (ya te mando un gif)
+- Muchas de las imagenes pueden tener dimensiones fijas
+- el atributo css float
+- Tu css no esta post processado, tiene margines en negativo, y tiene expressiones que son muy pesadas
+- estas usando mal BEM o probalmente no lo estas usando

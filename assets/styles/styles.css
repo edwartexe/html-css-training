@@ -32,8 +32,6 @@
 
 body {
   margin: 0;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 p {
@@ -57,6 +55,20 @@ p {
   display: flex;
   justify-content: space-between;
   padding: 26px 28px 0 28px;
+  position: fixed;
+  width: -webkit-fill-available;
+height: 100%;
+max-height: 100%;
+transition: max-height 0.25s ease-in;
+overflow: hidden;
+  z-index: 10;
+}
+
+.nav.closed {
+/*height:auto;*/
+max-height: 86px;
+transition: max-height 0.25s ease-out;
+  position: absolute;
 }
 
 .closed.nav_menu-toggle, 
@@ -67,24 +79,18 @@ p {
 
 .nav_logo {
   position: relative;
-  z-index: 2;
-}
-
-.nav_logo--big {
-  display: none;
-}
-
-.nav_logo--small {
-  height: 44px;
-  width: 44px;
+  z-index: 12;
+  height:fit-content;
 }
 
 /*------phone tooltip-----*/
 .nav_phone {
   position: relative;
   display: inline-block;
+  width: 24px;
+  height: 24px;
   margin:10px 0;
-  z-index: 2;
+  z-index: 12;
 }
 
 .nav_phone .nav_tooltip {
@@ -96,8 +102,8 @@ p {
   border-radius: 6px;
   padding: 5px 0;
   position: absolute;
-  z-index: 2;
-  top: -5px;
+  z-index: 12;
+  top: -5px;/*nega*/
   right: 105%;
 }
 
@@ -109,7 +115,7 @@ p {
   position: absolute;
   top: 50%;
   left: 100%; /* To the right of the tooltip */
-  margin-top: -5px;
+  margin-top: -5px;/*nega*/
   border-width: 5px;
   border-style: solid;
   border-color: transparent transparent transparent black;
@@ -125,9 +131,12 @@ p {
   border: 0 transparent;
   outline: none;
   cursor: pointer;
-  height: 100%;
   width: 24px;
+  height: 24px;
   padding: 15px 0;
+}
+.nav_menu-toggle.open {
+  background: #fff;
 }
 
 .nav_menu-toggle span {
@@ -138,7 +147,7 @@ p {
   border-radius: 6px;
   position: relative;
   background: #00343D;
-  z-index: 2;
+  z-index: 12;
   transform-origin: 4px 0px;
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
   background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
@@ -171,7 +180,7 @@ p {
 .nav_menu {
   position: absolute;
   width: 100%;
-  margin: -26px 0 0 -28px;
+  margin: -26px 0 0 -28px;/*nega*/
   padding: 100px 0 0 0;
   height: calc(100% - 100px);
   background: #fff;
@@ -181,7 +190,7 @@ p {
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   list-style-type: none;
-  z-index: 1;
+  z-index: 11;
 }
 
 .nav_menu li {
@@ -228,13 +237,17 @@ p {
 
 /*-------------fin seccion de NAV --------------------*/
 
-.section1 {
+.banner {
   text-align: center;
-  margin-top:70px;
+  padding-top:140px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: bottom;
 }
 
-.section1_title,
-.section1_subtitle {
+.banner_title,
+.whatwedo_subtitle {
   margin: 33px 0 0 0;
 }
 
@@ -262,19 +275,21 @@ p {
   color: #00343D;
 }
 
-.section1_img {
+.banner_img {
   width: 100%;
   height: 300px;
   object-fit: contain;
 }
 
-.section1_btn {
+.banner_btn {
   margin-top:40px;
 }
 
 .global-padding {
-  padding-right: 27px;
-  padding-left: 27px;
+  /*padding-right: 27px;
+  padding-left: 27px;*/
+  padding-right: 6.5%;
+  padding-left: 6.5%;
 }
 
 .main-list {
@@ -552,7 +567,7 @@ p {
   margin-bottom: 82px;
 }
 
-.industry.slick-slide {
+.industry_card.slick-slide {
   width: 250px;
   height: 349px;
   filter: drop-shadow(0px 2px 4px rgba(0, 52, 61, 0.160621));
@@ -655,12 +670,12 @@ p {
 
 
 @media only screen and (min-width: 834px) {
-  body {
-    background-image: url("../images/header.png");
-  }
+
   .global-padding {
-    padding-right: 97px;
-    padding-left: 97px;
+    /*padding-right: 97px;
+    padding-left: 97px;*/
+    padding-right: 11.6%;
+    padding-left: 11.6%;
   }
 
   .center-content-mid {
@@ -688,13 +703,6 @@ p {
     padding: 32px 31px 0 31px;
   }
 
-  .nav_logo--big {
-    display: block;
-  }
-  .nav_logo--small {
-    display: none;
-  }
-
   .nav_menu-toggle {
     padding: 17px 0;
   }
@@ -703,23 +711,22 @@ p {
   }
   /*------------------------------------header------------------------------------------*/
   .nav_menu {
-    margin: -32px 0 0 -31px;
+    margin: -32px 0 0 -31px; /*nega*/
   }
-  .section1 {
+  .banner {
     text-align: left;
-    padding: 0 29px;
-    margin-top: 48px;
+    padding: 128px 29px 0 29px;
     position: relative;
+    background-image: url("../images/header.png");
   }
 
-  .section1_title {
-    width: 60%;
+  .banner_title {
+    width: 57%;
     margin:0;
   }
 
-  .section1_img {
+  .banner_img {
     position: absolute;
-    z-index: -1;
     right: 32px;
     /*top: 155px; from page top*/
     /*bottom:0;*/
@@ -727,21 +734,22 @@ p {
     width: auto;
   }
 
-  .section1_p {
+  .whatwedo_p {
     max-width: 788px;
     line-height: 26px;
     margin: 0 auto;
   }
 
-  .section1_subtitle {
+  .whatwedo_subtitle {
     margin-top:106px;
   }
 
-  .section1_btn {
+  .banner_btn {
     width: 251px;
     height: 54px;
     text-align: left;
     padding: 0 41px;
+    margin-bottom: 69px;
   }
 
   /* ----------------------------------body -------------------------------------------*/
@@ -750,13 +758,13 @@ p {
     margin-top:65px;
   }
 
-  .endtoend {
+  .endtoend_row {
     display: flex;
     flex-wrap: wrap;
     margin-top: 46px;
   }
 
-  .endtoend.reverse {
+  .endtoend_row.reverse {
     flex-direction: row-reverse;
   }
 
@@ -797,7 +805,7 @@ p {
 
 
 
-  .explore-wrap {
+  .explore {
     position: relative;
   }
 
@@ -945,14 +953,11 @@ p {
 
 
 @media only screen and (min-width: 1441px) {
-  body {
-    background-image: url("../images/header-big.png");
-    background-position-y: -1px;
-  }
-
   .global-padding {
-    padding-right: 225px;
-    padding-left: 225px;
+    /*padding-right: 225px;
+    padding-left: 225px;*/
+    padding-right: 8.6%;
+    padding-left: 8.6%;
   }
 
 
@@ -976,6 +981,8 @@ p {
 
   .nav {
     padding: 34px 125px 0 125px;
+    height: auto;
+    position: absolute;
   }
 
   .nav_menu-toggle {
@@ -1011,19 +1018,23 @@ p {
   }
 
   /*------------------------------------header------------------------------------------*/
-  .section1 {
-    padding: 0 125px;
-    margin-top:132px;
+  .banner {
+    padding: 218px 125px 0 125px;
+    background-image: url("../images/header-big.png");
   }
-  .section1_img {
-    display: none;
+  .banner_img {
+    width: 490px;
+    height: 490px;
+    margin-right:97px;
+    margin-top: 0;
   }
 
-  .section1_btn {
+  .banner_btn {
     width: auto;
+    margin-bottom: 87px;
   }
 
-  .section1_title {
+  .banner_title {
     font-size: 3.75em;
     line-height: 103%;
     letter-spacing: -1px;
