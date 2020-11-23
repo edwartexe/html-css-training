@@ -742,10 +742,10 @@ transition: max-height 0.25s ease-out;
 
   .banner_img {
     position: absolute;
-    right: 32px;
+    right: 10%; /*32px;*/
     /*top: 155px; from page top*/
     /*bottom:0;*/
-    top:23px;
+    top:155px;
     width: auto;
   }
 
@@ -1059,8 +1059,8 @@ transition: max-height 0.25s ease-out;
   .banner_img {
     width: 490px;
     height: 490px;
-    margin-right:97px;
-    margin-top: 0;
+    right: 216px;
+    top: 100px;
   }
 
   .banner_btn {
