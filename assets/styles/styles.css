@@ -436,10 +436,10 @@ transition: max-height 0.25s ease-out;
   margin:41px auto 0 auto;
 }
 
-.display-small{
+.display-small {
   display: block;
 }
-.display-mid{
+.display-mid {
   display: none;
 }
 
@@ -858,10 +858,10 @@ transition: max-height 0.25s ease-out;
     float: left;
   }
 
-  .display-small{
+  .display-small {
     display: none;
   }
-  .display-mid{
+  .display-mid {
     display: block;
   }
 
@@ -1116,7 +1116,7 @@ transition: max-height 0.25s ease-out;
     margin: 114px 0 148px 0;
   } 
 
-  .explore_1{
+  .explore_1 {
     max-width: 390px;
   }
 
