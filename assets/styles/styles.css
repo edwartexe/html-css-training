@@ -615,6 +615,7 @@ transition: max-height 0.25s ease-out;
 
 
 .footer {
+  position: relative;
   background-color: #00D8A0;
   padding-top: 32px;
   padding-bottom:48px;
@@ -666,9 +667,9 @@ transition: max-height 0.25s ease-out;
   opacity: 0.6;
   margin-top: 45px;
 }
-
-
-
+.footer_top {
+  display: none;
+}
 
 
 
@@ -958,6 +959,20 @@ transition: max-height 0.25s ease-out;
     margin-top:13px;
   }
 
+  .footer_top {
+    width: 30px;
+    height: 32px;
+    border:0;
+    background: #FFFFFF;
+    border-radius: 3px;
+    padding: 6px 9px 5px 10px;
+  
+    display: block;
+    position: absolute;
+    right: 26px;
+    top:39px;
+  }
+
   .ending {
     clear:both
   }
@@ -1167,6 +1182,10 @@ transition: max-height 0.25s ease-out;
 
   .footer_info {
     width:349px;
+  }
+
+  .footer_top {
+    right: 125px;
   }
 
 }
