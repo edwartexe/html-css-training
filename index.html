@@ -11,285 +11,289 @@
   <script type="text/javascript" src="./assets/scripts/index.js" defer></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
-  <link rel="stylesheet" type="text/css" href="./assets/styles/slick-theme.css"/>
-  <link rel="stylesheet" type="text/css" href="./assets/styles/slick.css"/>
-  <script type="text/javascript" src="./assets/scripts/slick.min.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </head>
 <body>
 
-  <nav class="nav closed">
-    <button class="nav_menu-toggle" onclick="myFunction()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-    <picture class="nav_logo">
-      <source media="(min-width:834px)" srcset="./assets/svg/logo_big.svg">
-      <source media="(min-width:0px)" srcset="./assets/svg/logo_mini_green.svg">
-      <img src="./assets/svg/logo_mini_green.svg" alt="Koombea" style="width:auto;">
-    </picture>
-
-    <ul class="nav_menu">
-      <li><a href="#news">Home</a><span></span></li>
-      <li><a href="#about">About</a><span></span></li>
-      <li><a href="#services">Services</a><span></span></li>
-      <li><a href="#work">Our Work</a><span></span></li>
-      <li><a href="#blog">Blog</a><span></span></li>
-      <li><a href="#career">Careers</a><span></span></li>
-      <li class="contactLink"><a href="#contact">Contact</a></li>
-    </ul>
-
-    <a href="#contact" class="nav_phone">
-      <img class="nav_phone-image" src="./assets/svg/phone-green.svg" alt="telefono"/>
-      <span class="nav_tooltip">300 00 00 000</span>
-    </a>
-  </nav>
-
-
-
-  <div class="banner">
-    <h1 class="banner_title main-title">The Leading Mobile & Web App Development Partner</h1>
-    <button class="banner_btn button-base button-header" type="button"  />GET IN TOUCH</button>
-    <img class="banner_img" src="./assets/images/header_img.png" alt="banner image"/>
-
-    <picture class="banner_ring">
-      <source media="(min-width:1441px)" srcset="./assets/svg/banner_ring_big.svg">
-      <source media="(min-width:834px)" srcset="./assets/svg/banner_ring_mid.svg">
-      <img src="./assets/svg/banner_ring_mid.svg" alt="the ring" style="width:auto;">
-    </picture>
-  </div>
-
-
-
-  <div class="whatwedo">
-    <h2 class="whatwedo_subtitle secondary-title center-content">what we do</h2>
-    <p class="whatwedo_p center-content">We bring your app ideas to reality. <br/> We stand out for our top web and mobile app development skills, though, we are so much more than that, we are a genuine strategic business partner.</p>
-  </div>
-  
-
-
-  <div class="endtoend">
-    <h2 class="main-title section-margin global-padding center-content endtoend-title">End-to-end Application Development</h2>
-
-    <div class="endtoend_row reverse global-padding">
-      <div class="entoend_text">
-        <h3 class="third-title endtoend_subtitle">You Manage The Business, We Handle The Application</h3>
-        <p class="endtoend_subtext">We cover all the bits and pieces needed to develop a top-notch, innovative product, from strategy, to native apps, to the backend services. We code to very high standards and test continuously, which creates easy to maintain, high quality products.</p>
-      </div>
-      <img class="endtoend_img center-block" src="./assets/images/sec2_img1_p.png" alt="you manage"/>
+  <header class="nav-wrapper container">
+    <div class="nav closed">
+      <button class="nav__menu-toggle" onclick="myFunction()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <picture class="nav__logo">
+        <source media="(min-width:834px)" srcset="./assets/svg/logo_big.svg">
+        <source media="(min-width:0px)" srcset="./assets/svg/logo_mini_green.svg">
+        <img src="./assets/svg/logo_mini_green.svg" alt="Koombea" style="width:auto;">
+      </picture>
+      <nav class="nav__menu">
+        <h2 class="nav__title">Site Navigation</h2>
+        <li><a href="#news">Home</a><span></span></li>
+        <li><a href="#about">About</a><span></span></li>
+        <li><a href="#services">Services</a><span></span></li>
+        <li><a href="#work">Our Work</a><span></span></li>
+        <li><a href="#blog">Blog</a><span></span></li>
+        <li><a href="#career">Careers</a><span></span></li>
+        <li class="contactLink"><a href="#contact">Contact</a></li>
+      </nav>
+      <a href="#contact" class="nav__phone">
+        <img class="nav__phone-image" src="./assets/svg/phone-green.svg" alt="telefono"/>
+        <span class="nav__tooltip">300 00 00 000</span>
+      </a>
     </div>
+  </header>
+
+
+  <main>
+    <section class="banner">
+      <div class="container">
+        <h1 class="banner__title main-title">The Leading Mobile & Web App Development Partner</h1>
+        <a class="banner__btn button-base button-header" type="button"  />GET IN TOUCH</a>
+        <img class="banner__img" src="./assets/images/header_img.png" alt="banner image"/>
+      </div>
+    </section>
+
+
+
+    <section class="whatwedo container">
+      <h2 class="whatwedo__subtitle secondary-title center-content">What We Do</h2>
+      <p class="whatwedo__p center-content">We bring your app ideas to reality. <br/> We stand out for our top web and mobile app development skills, though, we are so much more than that, we are a genuine strategic business partner.</p>
+    </section>
+    
+
+
+    <section class="endtoend">
+      <h2 class="main-title section-margin center-content endtoend-title container-big-only">End-to-end Application Development</h2>
+
+      <div class="container">
+        <div class="endtoend__row reverse">
+          <div class="entoend__text">
+            <h3 class="third-title endtoend__subtitle">You Manage The Business, We Handle The Application</h3>
+            <p class="endtoend__subtext">We cover all the bits and pieces needed to develop a top-notch, innovative product, from strategy, to native apps, to the backend services. We code to very high standards and test continuously, which creates easy to maintain, high quality products.</p>
+          </div>
+          <img class="endtoend__img center-block" src="./assets/images/sec2_img1.jpg" alt="you manage"/>
+        </div>
+      
+        <div class="endtoend__row">
+          <div class="entoend__text">
+            <h3 class="third-title endtoend__subtitle" >Mobile, Web & Enterprise </h3>
+            <ul class="main-list endtoend__subtext">
+              <li>Product strategy and planning</li>
+              <li>UX/UI design</li>
+              <li>Native iOS & Android app development</li>
+              <li>Backend server and architecture buildout</li>
+              <li>IoT and wearables</li>
+              <li>Gaming</li>
+              <li>Hybrid app development</li>
+            </ul>
+          </div>
+          <img class="endtoend__img endtoend__img--right center-block"  src="./assets/images/sec2_img2.jpg" alt="we handle"/>
+        </div>
+      
+        <div class="center-content-mid">
+          <a class="button-base button-primary endtoend__button" type="button"  />GET IN TOUCH</a>
+        </div>
+      </div>
+      
+      
+    </section>
+
+
+
+    <span class="division-line"></span>
+
+
+
+    <section class="explore container">
+      <div class="explore__1">
+        <h2 class="main-title">Explore our work</h2>
+        <h3 class="third-title">Results for innovative companies</h3>
+        <p >We help businesses ideate, strategize, iterate, and launch their Mobile Applications while keeping cost, timelines and objectives in mind.</p>
+        <a class="button-base button-secondary explore__3 center-block display-mid" type="button"  />EXPLORE</a>
+      </div>
+      <img class="explore__2 center-block" src="./assets/images/sec3_img1.jpg" alt="cellphone example"/>
+      <a class="button-base button-secondary explore__3 center-block display-small" type="button"  />EXPLORE</a>
+    </section>
+
+
+
+    <section class="collaborative container">
+      <img class="collaborative__img" src="./assets/images/sec3_img2.jpg" alt="collaboration"/>
+      <h2 class="main-title collaborative__title">Collaborative & Scientific Approach</h2>
+      <p class="collaborative__text">Our custom agile process puts you in control; reduces risk, increases transparency between our team and yours, and allows you to hit even aggressive timelines.</p>
+    </section>
+
+
+
+    <section class="grid-wrapper container">
+      <div id="section4" class="grid">
+        <div class="grid__block">
+          <div class="grid__titleblock">
+            <img class="grid__icon" src="./assets/svg/hand_piece.svg" alt="solutions"/>
+            <h2 class="grid__title third-title">Enterprise Solutions</h2>
+          </div>
+          <p>We address all design and technical challenges, identify any risk areas and plan for them, and create a sound foundation for the product based on cost, timeline, and technology. We deliver your product blueprint, complete with the app's architecture.</p>
+        </div>
+
+        <div class="grid__block">
+          <div class="grid__titleblock">
+            <img class="grid__icon" src="./assets/svg/gear.svg" alt="gear"/>
+            <h2 class="grid__title third-title">Web & Mobile Development</h2>
+          </div>
+          <p>This is where the coding happens. Our team plans and delivers in sprints - Cross-functional team rallies around the sprint goals to deliver them on time and within budget. Each sprint results in an increment which is a potentially shippable product.</p>
+        </div>
+
+        <div class="grid__block">
+          <div class="grid__titleblock">
+            <img class="grid__icon" src="./assets/svg/design.svg" alt="design"/>
+            <h2 class="grid__title third-title">Design</h2>
+          </div>
+          <p>Design gives a more complete story of the app, encompassing wireframes, storyboards,  user flows, and prototyping.</p>
+        </div>
+
+        <div class="grid__block"></div>
+
+        <div></div>
+      </div>
+
+      <div class="center-content-mid">
+        <a class="button-base button-primary collaborative__button" type="button"  />GET IN TOUCH</a>
+      </div>
+    </section>
   
-    <div class="endtoend_row global-padding">
-      <div class="entoend_text">
-        <h3 class="third-title endtoend_subtitle" >Mobile, Web & Enterprise </h3>
-        <ul class="main-list endtoend_subtext">
-          <li>Product strategy and planning</li>
-          <li>UX/UI design</li>
-          <li>Native iOS & Android app development</li>
-          <li>Backend server and architecture buildout</li>
-          <li>IoT and wearables</li>
-          <li>Gaming</li>
-          <li>Hybrid app development</li>
+
+
+
+    <section class="brands-and-cards ">
+      <h2 class="main-title trust-bg center-content container-big-only">Some of the Brands that Trust Us</h2>  
+      
+      <div class="brands">
+        <div class="brand__slider">
+          <img class="brand__logo" src="./assets/svg/logo_luna.svg" alt="brand luna"/>
+          <img class="brand__logo" src="./assets/svg/logo_payix.svg" alt="brand payix"/>
+          <img class="brand__logo " src="./assets/svg/logo_flight.svg" alt="brand flight"/>
+          <img class="brand__logo" src="./assets/svg/logo_doit.svg" alt="brand do it"/>
+          <img class="brand__logo" src="./assets/svg/logo_libc.svg" alt="brand libc"/>
+        </div>
+    
+        <div class="card-slider">
+          <div class="card">
+            <div class="card__ring"><img class="card__img" src="./assets/images/card_example.png" alt="card"/></div>
+            <p class="card__text">“It seemed like a good sign to us that somebody was being a real critical and analytical partner."</p>
+            <p class="card__name">Tiffany Wycoff</p>
+            <p class="card__info">Co-founder of LINC</p>
+          </div>
+    
+          <div class="card">
+            <div class="card__ring "><img class="card__img" src="./assets/images/card_example.png" alt="card"/></div>
+            <p class="card__text">““With Koombea now by our side, we’re achieving our client on- boarding goals and maximizing revenue opportunities”"</p>
+            <p class="card__name">Tiffany Wycoff</p>
+            <p class="card__info">Payix CEO</p>
+          </div>
+    
+          <div class="card">
+            <div class="card__ring"><img class="card__img" src="./assets/images/card_example.png" alt="card"/></div>
+            <p class="card__text">“"Koombea is a truly full-service development agency, and their holistic and consultative approach enabled huge cost savings on our end.""</p>
+            <p class="card__name">Mathew Southern</p>
+            <p class="card__info">Founder/CEO Southern Straps</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <span class="division-line division-line--too"></span>
+
+
+    <section class="industry">
+      <h2 class="main-title center-content">Explore the Industries we are currently serving</h2>
+
+      <div class="industry-slider">
+        <div class="industry__card">
+          <img class="industry__img" src="./assets/images/Illustration/MedTech.png" alt="med tech"/>
+          <p class="industry__name">Med tech</p>
+        </div>
+        <div class="industry__card">
+          <img class="industry__img" src="./assets/images/Illustration/HitTech.png" alt="hi tech"/>
+          <p class="industry__name">Hi tech</p>
+        </div>
+        <div class="industry__card">
+          <img class="industry__img " src="./assets/images/Illustration/Retail.png" alt="retail"/>
+          <p class="industry__name">Retail</p>
+        </div>
+        <div class="industry__card">
+          <img class="industry__img" src="./assets/images/Illustration/IoT.png" alt="iot"/>
+          <p class="industry__name">IoT</p>
+        </div>
+        <div class="industry__card">
+          <img class="industry__img" src="./assets/images/Illustration/FintTech.png" alt="fint tech"/>
+          <p class="industry__name">Fin tech</p>
+        </div>
+      </div>
+    </section>
+    
+
+
+    <section class="partners">  
+      <h2 class="main-title center-content partner-title">Partnerships and Recognitions</h2>
+      <div class="partner-slider">
+        <img class="partner__logo" src="./assets/svg/partnerAWS.svg" alt="partner aws"/>
+        <img class="partner__logo " src="./assets/svg/partnerClutch.svg" alt="partner clutch"/>
+        <img class="partner__logo" src="./assets/svg/partnerShop.svg" alt="partner shop"/>
+      </div>
+    </section>
+
+  </main>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__logo">
+        <img src="./assets/svg/logo_big.svg" alt="logo"/>
+      </div>
+
+      <div class="footer__block">
+        <h2 class="footer__title">Our Specialities</h2>
+        <ul class="footer__list">
+          <li>Fintech</li>
+          <li>Medtech</li>
+          <li>Hightech</li>
+          <li>Retail</li>
+          <li>IOT</li>
         </ul>
       </div>
-      <img class="endtoend_img--right center-block"  src="./assets/images/sec2_img2.jpg" alt="we handle"/>
-    </div>
-  
-    <div class="center-content-mid global-padding">
-      <button class="button-base button-primary endtoend_button" type="button"  />GET IN TOUCH</button>
-    </div>
-  </div>
+      <div class="footer__block">
+        <h2 class="footer__title">Locations</h2>
+        <ul class="footer__list">
+          <li>Chicago, USA</li>
+          <li>Miami, USA</li>
+          <li>San Francisco, USA</li>
+          <li>New York City, USA</li>
+          <li>Barranquilla, CO</li>
+        </ul>
+      </div>
 
-
-
-  <span class="division-line"></span>
-
-
-
-  <div class="explore global-padding">
-    <div class="explore_1">
-      <h2 class="main-title">Explore our work</h2>
-      <h3 class="third-title">Results for innovative companies</h3>
-      <p >We help businesses ideate, strategize, iterate, and launch their Mobile Applications while keeping cost, timelines and objectives in mind.</p>
-      <button class="button-base button-secondary explore_3 center-block display-mid" type="button"  />EXPLORE</button>
-    </div>
-    <img class="explore_2 center-block" src="./assets/images/sec3_img1.jpg" alt="cellphone example"/>
-    <button class="button-base button-secondary explore_3 center-block display-small" type="button"  />EXPLORE</button>
-  </div>
-
-
-
-  <div class="collaborative global-padding">
-    <img class="collaborative_img" src="./assets/images/sec3_img2.jpg" alt="collaboration"/>
-    <h2 class="main-title collaborative_title">Collaborative & Scientific Approach</h2>
-    <p class="collaborative_text">Our custom agile process puts you in control; reduces risk, increases transparency between our team and yours, and allows you to hit even aggressive timelines.</p>
-  </div>
-
-
-
-  <div class="grid-wrapper">
-    <div id="section4" class="grid global-padding">
-      <div class="grid_block">
-        <div class="grid_titleblock">
-          <img class="grid_icon" src="./assets/svg/hand_piece.svg" alt="solutions"/>
-          <h2 class="grid_title third-title">Enterprise Solutions</h2>
+      <div class="footer__bottom">
+        <p class="footer__call">call us</p>
+        <h2 class="footer__title">+1-888-840-3252</h2>
+        <div class="footer__logos">
+          <img src="./assets/svg/facebook.svg" alt="facebook"/>
+          <img src="./assets/svg/footer_generic.svg" alt="icon"/>
+          <img src="./assets/svg/footer_generic.svg" alt="icon"/>
+          <img src="./assets/svg/youtube.svg" alt="youtube"/>
         </div>
-        <p>We address all design and technical challenges, identify any risk areas and plan for them, and create a sound foundation for the product based on cost, timeline, and technology. We deliver your product blueprint, complete with the app's architecture.</p>
+        <p class="footer__info">© 2007 -2020 Koombea, Inc.  All Rights Reserved Privacy policy   /   Site map </p>
       </div>
 
-      <div class="grid_block">
-        <div class="grid_titleblock">
-          <img class="grid_icon" src="./assets/svg/gear.svg" alt="gear"/>
-          <h2 class="grid_title third-title">Web & Mobile Development</h2>
-        </div>
-        <p>This is where the coding happens. Our team plans and delivers in sprints - Cross-functional team rallies around the sprint goals to deliver them on time and within budget. Each sprint results in an increment which is a potentially shippable product.</p>
-      </div>
+      <button onclick="toTop()" class="footer__top"><img src="./assets/svg/arrow.svg"></button>
 
-      <div class="grid_block">
-        <div class="grid_titleblock">
-          <img class="grid_icon" src="./assets/svg/design.svg" alt="design"/>
-          <h2 class="grid_title third-title">Design</h2>
-        </div>
-        <p>Design gives a more complete story of the app, encompassing wireframes, storyboards,  user flows, and prototyping.</p>
-      </div>
-
-      <div class="grid_block"></div>
-
-      <div></div>
+      <div class="ending"></div>
     </div>
-
-    <div class="center-content-mid global-padding">
-      <button class="button-base button-primary collaborative_button" type="button"  />GET IN TOUCH</button>
-    </div>
-  </div>
- 
-
-
-
-  <div class="brands-and-cards">
-    <h2 class="main-title trust-bg center-content global-padding">Some of the Brands that Trust Us</h2>  
-    <div class="brands global-padding">
-      <div class="brand_slider">
-        <img class="brand_logo" src="./assets/svg/logo_luna.svg" alt="brand luna"/>
-        <img class="brand_logo" src="./assets/svg/logo_payix.svg" alt="brand payix"/>
-        <img class="brand_logo " src="./assets/svg/logo_flight.svg" alt="brand flight"/>
-        <img class="brand_logo" src="./assets/svg/logo_doit.svg" alt="brand do it"/>
-        <img class="brand_logo" src="./assets/svg/logo_libc.svg" alt="brand libc"/>
-      </div>
-  
-      <div class="card-slider">
-        <div class="card">
-          <div class="card_ring"><img class="card_img" src="./assets/images/card_example.png" alt="card"/></div>
-          <p class="card_text">“It seemed like a good sign to us that somebody was being a real critical and analytical partner."</p>
-          <p class="card_name">Tiffany Wycoff</p>
-          <p class="card_info">Co-founder of LINC</p>
-        </div>
-  
-        <div class="card">
-          <div class="card_ring "><img class="card_img" src="./assets/images/card_example.png" alt="card"/></div>
-          <p class="card_text">““With Koombea now by our side, we’re achieving our client on- boarding goals and maximizing revenue opportunities”"</p>
-          <p class="card_name">Tiffany Wycoff</p>
-          <p class="card_info">Payix CEO</p>
-        </div>
-  
-        <div class="card">
-          <div class="card_ring"><img class="card_img" src="./assets/images/card_example.png" alt="card"/></div>
-          <p class="card_text">“"Koombea is a truly full-service development agency, and their holistic and consultative approach enabled huge cost savings on our end.""</p>
-          <p class="card_name">Mathew Southern</p>
-          <p class="card_info">Founder/CEO Southern Straps</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <span class="division-line--too"></span>
-
-
-  <div class="industry">
-    <h2 class="main-title center-content global-padding">Explore the Industries we are currently serving</h2>
-
-    <div class="industry-slider">
-      <div class="industry_card">
-        <img class="industry_img" src="./assets/images/Illustration/MedTech.png" alt="med tech"/>
-        <p class="industry_name">Med tech</p>
-      </div>
-      <div class="industry_card">
-        <img class="industry_img" src="./assets/images/Illustration/HitTech.png" alt="hi tech"/>
-        <p class="industry_name">Hi tech</p>
-      </div>
-      <div class="industry_card">
-        <img class="industry_img " src="./assets/images/Illustration/Retail.png" alt="retail"/>
-        <p class="industry_name">Retail</p>
-      </div>
-      <div class="industry_card">
-        <img class="industry_img" src="./assets/images/Illustration/IoT.png" alt="iot"/>
-        <p class="industry_name">IoT</p>
-      </div>
-      <div class="industry_card">
-        <img class="industry_img" src="./assets/images/Illustration/FintTech.png" alt="fint tech"/>
-        <p class="industry_name">Fin tech</p>
-      </div>
-    </div>
-  </div>
-  
-
-
-  <div class="partners">  
-    <h2 class="main-title center-content global-padding partner-title">Partnerships and Recognitions</h2>
-    <div class="partner-slider">
-      <img class="partner_logo" src="./assets/svg/partnerAWS.svg" alt="partner aws"/>
-      <img class="partner_logo " src="./assets/svg/partnerClutch.svg" alt="partner clutch"/>
-      <img class="partner_logo" src="./assets/svg/partnerShop.svg" alt="partner shop"/>
-    </div>
-  </div>
-
-
-
-
-
-  <footer class="footer global-padding">
-    <div class="footer_logo">
-      <img src="./assets/svg/logo_big.svg" alt="logo"/>
-    </div>
-
-    <div class="footer_block">
-      <h2 class="footer_title">Our Specialities</h2>
-      <ul class="footer_list">
-        <li>Fintech</li>
-        <li>Medtech</li>
-        <li>Hightech</li>
-        <li>Retail</li>
-        <li>IOT</li>
-      </ul>
-    </div>
-    <div class="footer_block">
-      <h2 class="footer_title">Locations</h2>
-      <ul class="footer_list">
-        <li>Chicago, USA</li>
-        <li>Miami, USA</li>
-        <li>San Francisco, USA</li>
-        <li>New York City, USA</li>
-        <li>Barranquilla, CO</li>
-      </ul>
-    </div>
-
-    <div class="footer_bottom">
-      <p class="footer_call">call us</p>
-      <h2 class="footer_title">+1-888-840-3252</h2>
-      <div class="footer_logos">
-        <img src="./assets/svg/facebook.svg" alt="facebook"/>
-        <img src="./assets/svg/footer_generic.svg" alt="icon"/>
-        <img src="./assets/svg/footer_generic.svg" alt="icon"/>
-        <img src="./assets/svg/youtube.svg" alt="youtube"/>
-      </div>
-      <p class="footer_info">© 2007 -2020 Koombea, Inc.  All Rights Reserved Privacy policy   /   Site map </p>
-    </div>
-
-    <button onclick="toTop()" class="footer_top"><img src="./assets/svg/arrow.svg"></button>
-
-    <div class="ending"></div>
   </footer>
 </body>
 </html>

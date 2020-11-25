@@ -1,14 +1,19 @@
 function myFunction() {
-  let burger = document.getElementsByClassName("nav_menu-toggle")[0];
-  let burgerMenu = document.getElementsByClassName("nav_menu")[0];
+  let burger = document.getElementsByClassName("nav__menu-toggle")[0];
+  let burgerMenu = document.getElementsByClassName("nav__menu")[0];
   let mainnav = document.getElementsByClassName("nav")[0];
   burger.classList.toggle("open");
   burgerMenu.classList.toggle("open");
   mainnav.classList.toggle("closed");
 }
 
+function toTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 $(document).ready(function(){
-  $('.brand_slider').slick({
+  $('.brand__slider').slick({
     variableWidth: true,
     centerMode: true,
     arrows: false,
@@ -101,25 +106,3 @@ $(document).ready(function(){
   });
 
 });
-
-/*function deslickify(){
-$('.brand_slider').slick("unslick");
-
-$('.card-slider').slick("unslick");
-
-$('.industry-slider').slick("unslick");
-
-$('.partner-slider').slick("unslick");
-}
-
-
-slickify();
-
-$(window).resize(function(){
-var $windowWidth = $(document).width();
-if ($windowWidth < 1441) {
-    slickify();   
-}else{
-    $deslickify();
-}
-});*/
