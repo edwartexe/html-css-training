@@ -79,9 +79,9 @@
         </div>
       
         <div class="endtoend__row">
-          <div class="entoend__text">
+          <div class="entoend__text endtoend__text--2nd">
             <h3 class="third-title endtoend__subtitle" >Mobile, Web & Enterprise </h3>
-            <ul class="main-list endtoend__subtext">
+            <ul class="endtoend__list">
               <li>Product strategy and planning</li>
               <li>UX/UI design</li>
               <li>Native iOS & Android app development</li>
@@ -110,9 +110,9 @@
 
     <section class="explore container">
       <div class="explore__1">
-        <h2 class="main-title">Explore our work</h2>
-        <h3 class="third-title">Results for innovative companies</h3>
-        <p >We help businesses ideate, strategize, iterate, and launch their Mobile Applications while keeping cost, timelines and objectives in mind.</p>
+        <h2 class="main-title explore__title">Explore our work</h2>
+        <h3 class="third-title explore__subtitle">Results for innovative companies</h3>
+        <p class="explore__text">We help businesses ideate, strategize, iterate, and launch their Mobile Applications while keeping cost, timelines and objectives in mind.</p>
         <a class="button-base button-secondary explore__3 center-block display-mid" type="button"  />EXPLORE</a>
       </div>
       <img class="explore__2 center-block" src="./assets/images/sec3_img1.jpg" alt="cellphone example"/>
@@ -121,10 +121,12 @@
 
 
 
-    <section class="collaborative container">
+    <section class="collaborative">
       <img class="collaborative__img" src="./assets/images/sec3_img2.jpg" alt="collaboration"/>
-      <h2 class="main-title collaborative__title">Collaborative & Scientific Approach</h2>
-      <p class="collaborative__text">Our custom agile process puts you in control; reduces risk, increases transparency between our team and yours, and allows you to hit even aggressive timelines.</p>
+      <div class="container">
+        <h2 class="main-title collaborative__title">Collaborative & Scientific Approach</h2>
+        <p class="collaborative__text">Our custom agile process puts you in control; reduces risk, increases transparency between our team and yours, and allows you to hit even aggressive timelines.</p>  
+      </div>
     </section>
 
 
@@ -136,7 +138,7 @@
             <img class="grid__icon" src="./assets/svg/hand_piece.svg" alt="solutions"/>
             <h2 class="grid__title third-title">Enterprise Solutions</h2>
           </div>
-          <p>We address all design and technical challenges, identify any risk areas and plan for them, and create a sound foundation for the product based on cost, timeline, and technology. We deliver your product blueprint, complete with the app's architecture.</p>
+          <p class="grid__text">We address all design and technical challenges, identify any risk areas and plan for them, and create a sound foundation for the product based on cost, timeline, and technology. We deliver your product blueprint, complete with the app's architecture.</p>
         </div>
 
         <div class="grid__block">
@@ -144,7 +146,7 @@
             <img class="grid__icon" src="./assets/svg/gear.svg" alt="gear"/>
             <h2 class="grid__title third-title">Web & Mobile Development</h2>
           </div>
-          <p>This is where the coding happens. Our team plans and delivers in sprints - Cross-functional team rallies around the sprint goals to deliver them on time and within budget. Each sprint results in an increment which is a potentially shippable product.</p>
+          <p class="grid__text">This is where the coding happens. Our team plans and delivers in sprints - Cross-functional team rallies around the sprint goals to deliver them on time and within budget. Each sprint results in an increment which is a potentially shippable product.</p>
         </div>
 
         <div class="grid__block">
@@ -152,11 +154,8 @@
             <img class="grid__icon" src="./assets/svg/design.svg" alt="design"/>
             <h2 class="grid__title third-title">Design</h2>
           </div>
-          <p>Design gives a more complete story of the app, encompassing wireframes, storyboards,  user flows, and prototyping.</p>
+          <p class="grid__text">Design gives a more complete story of the app, encompassing wireframes, storyboards,  user flows, and prototyping.</p>
         </div>
-
-        <div class="grid__block"></div>
-
         <div></div>
       </div>
 
@@ -254,33 +253,35 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__logo">
-        <img src="./assets/svg/logo_big.svg" alt="logo"/>
+        <img class="footer__koombea" src="./assets/svg/logo_big.svg" alt="logo"/>
       </div>
 
-      <div class="footer__block">
-        <h2 class="footer__title">Our Specialities</h2>
-        <ul class="footer__list">
-          <li>Fintech</li>
-          <li>Medtech</li>
-          <li>Hightech</li>
-          <li>Retail</li>
-          <li>IOT</li>
-        </ul>
-      </div>
-      <div class="footer__block">
-        <h2 class="footer__title">Locations</h2>
-        <ul class="footer__list">
-          <li>Chicago, USA</li>
-          <li>Miami, USA</li>
-          <li>San Francisco, USA</li>
-          <li>New York City, USA</li>
-          <li>Barranquilla, CO</li>
-        </ul>
+      <div class="footer__flex">
+        <div class="footer__block">
+          <h2 class="footer__title">Our Specialities</h2>
+          <ul class="footer__list">
+            <li>Fintech</li>
+            <li>Medtech</li>
+            <li>Hightech</li>
+            <li>Retail</li>
+            <li>IOT</li>
+          </ul>
+        </div>
+        <div class="footer__block">
+          <h2 class="footer__title">Locations</h2>
+          <ul class="footer__list">
+            <li>Chicago, USA</li>
+            <li>Miami, USA</li>
+            <li>San Francisco, USA</li>
+            <li>New York City, USA</li>
+            <li>Barranquilla, CO</li>
+          </ul>
+        </div>
       </div>
 
       <div class="footer__bottom">
-        <p class="footer__call">call us</p>
-        <h2 class="footer__title">+1-888-840-3252</h2>
+        <p class="footer__call">Call us</p>
+        <h2 class="footer__phoneno">+1-888-840-3252</h2>
         <div class="footer__logos">
           <img src="./assets/svg/facebook.svg" alt="facebook"/>
           <img src="./assets/svg/footer_generic.svg" alt="icon"/>
