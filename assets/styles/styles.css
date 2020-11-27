@@ -57,30 +57,48 @@ p {
 /*--------------------------------seccion NAV---------------------------------*/
 
 .nav {
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  width: -webkit-fill-available;
+  width: 100%;
+  height: 62px;
   padding-top: 26px;
   padding-bottom: 26px;
-/*height: 100%;*/
-transition: max-height 0.25s ease-in;
-overflow: hidden;
   z-index: 10;
+  /*position: absolute;*/
+  position: fixed;
+  transition: height background 0.25s ease-out;
+  overflow: hidden;
 }
 
-.nav.closed {
-/*height:auto;*/
-max-height: 62px;
-transition: max-height 0.25s ease-out;
-  position: absolute;
+.container--nav {
+  display: flex;
+  justify-content: space-between;
 }
 
-.closed.nav__menu-toggle, 
-.closed .nav__logo,
-.closed .nav__phone-image {
+.nav.open {
+  transition: height background 0.25s ease-in;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+.nav.fixed{
+  transition: background 0.25s ease-in;
+  background: #fff;
+}
+
+
+.nav__menu-toggle, 
+.nav__logo,
+.nav__phone-image {
   filter: grayscale(0) brightness(0);
 }
+
+.open.nav__menu-toggle, 
+.open .nav__logo,
+.open .nav__phone-image {
+  filter: none;
+}
+
+
 
 .nav__logo {
   position: relative;
@@ -88,7 +106,6 @@ transition: max-height 0.25s ease-out;
   height:fit-content;
 }
 
-/*------phone tooltip-----*/
 .nav__phone {
   position: relative;
   display: inline-block;
@@ -98,34 +115,6 @@ transition: max-height 0.25s ease-out;
   z-index: 12;
 }
 
-.nav__phone .nav__tooltip {
-  visibility: hidden;
-  width: 120px;
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 12;
-  top: -5px;/*nega*/
-  right: 105%;
-}
-
-.nav__phone:hover .nav__tooltip {
-  visibility: visible;
-}
-.nav__phone .nav__tooltip::after {
-  content: " ";
-  position: absolute;
-  top: 50%;
-  left: 100%; /* To the right of the tooltip */
-  margin-top: -5px;/*nega*/
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent transparent black;
-}
-/*-----end phone tooltip-----*/
 
 .nav__menu-toggle {
   display: block;
@@ -185,14 +174,14 @@ transition: max-height 0.25s ease-out;
 .nav__menu {
   position: absolute;
   width: 100%;
-  margin: -26px 0 0 -28px;/*nega*/
+  margin: -26px 0 0 0;/*nega*/
   padding: 100px 0 0 0;
   height: calc(100% - 100px);
   background: #fff;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+  transform: translate(-200%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   list-style-type: none;
   z-index: 11;
@@ -243,6 +232,36 @@ transition: max-height 0.25s ease-out;
 .nav__title {
   display: none;
 }
+
+/*------phone tooltip-----*/
+.nav__phone .nav__tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 12;
+  top: -5px;/*nega*/
+  right: 105%;
+}
+
+.nav__phone:hover .nav__tooltip {
+  visibility: visible;
+}
+.nav__phone .nav__tooltip::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 100%; /* To the right of the tooltip */
+  margin-top: -5px;/*nega*/
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+}
+/*-----end phone tooltip-----*/
 
 /*-------------fin seccion de NAV --------------------*/
 
@@ -752,7 +771,7 @@ transition: max-height 0.25s ease-out;
   }
   /*------------------------------------header------------------------------------------*/
   .nav__menu {
-    margin: -32px 0 0 -31px; /*nega*/
+    margin: -32px 0 0 0; /*nega*/
   }
   .banner {
     text-align: left;
