@@ -19,8 +19,8 @@
 <body>
 
   <header class="nav">
-    <div class="container container--nav">
-      <button class="nav__menu-toggle" onclick="myFunction()">
+    <div class="container flex flex--between">
+      <button class="nav__menu-toggle js-nav-toggle">
         <span></span>
         <span></span>
         <span></span>
@@ -31,14 +31,14 @@
         <img src="./assets/svg/logo_mini_green.svg" alt="Koombea" style="width:auto;">
       </picture>
       <nav class="nav__menu">
-        <h2 class="nav__title">Site Navigation</h2>
+        <h2 class="display-none">Site Navigation</h2>
         <li><a href="#news">Home</a><span></span></li>
         <li><a href="#about">About</a><span></span></li>
         <li><a href="#services">Services</a><span></span></li>
         <li><a href="#work">Our Work</a><span></span></li>
         <li><a href="#blog">Blog</a><span></span></li>
         <li><a href="#career">Careers</a><span></span></li>
-        <li class="contactLink"><a href="#contact">Contact</a></li>
+        <li class="nav__contact"><a href="#contact">Contact</a></li>
       </nav>
       <a href="#contact" class="nav__phone">
         <img class="nav__phone-image" src="./assets/svg/phone-green.svg" alt="telefono"/>
@@ -51,8 +51,8 @@
   <main>
     <section class="banner">
       <div class="container">
-        <h1 class="banner__title main-title">The Leading Mobile & Web App Development Partner</h1>
-        <a class="banner__btn button-base button-header" type="button"  />GET IN TOUCH</a>
+        <h1 class="banner__title title-primary">The Leading Mobile & Web App Development Partner</h1>
+        <a class="banner__btn btn-base btn-header" type="button"  />GET IN TOUCH</a>
         <img class="banner__img" src="./assets/images/header_img.png" alt="banner image"/>
       </div>
     </section>
@@ -60,27 +60,27 @@
 
 
     <section class="whatwedo container">
-      <h2 class="whatwedo__subtitle secondary-title center-content">What We Do</h2>
+      <h2 class="whatwedo__subtitle title-secondary center-content">What We Do</h2>
       <p class="whatwedo__p center-content">We bring your app ideas to reality. <br/> We stand out for our top web and mobile app development skills, though, we are so much more than that, we are a genuine strategic business partner.</p>
     </section>
     
 
 
     <section class="endtoend">
-      <h2 class="main-title section-margin center-content endtoend-title container-big-only">End-to-end Application Development</h2>
+      <h2 class="title-primary center-content endtoend-title container-big-only">End-to-end Application Development</h2>
 
       <div class="container">
-        <div class="endtoend__row reverse">
+        <div class="endtoend__row flex-row-reverse">
           <div class="entoend__text">
-            <h3 class="third-title endtoend__subtitle">You Manage The Business, We Handle The Application</h3>
+            <h3 class="title-tertiary endtoend__subtitle">You Manage The Business, We Handle The Application</h3>
             <p class="endtoend__subtext">We cover all the bits and pieces needed to develop a top-notch, innovative product, from strategy, to native apps, to the backend services. We code to very high standards and test continuously, which creates easy to maintain, high quality products.</p>
           </div>
-          <img class="endtoend__img center-block" src="./assets/images/sec2_img1.jpg" alt="you manage"/>
+          <img class="endtoend__img center-self" src="./assets/images/sec2_img1.jpg" alt="you manage"/>
         </div>
       
         <div class="endtoend__row">
           <div class="entoend__text endtoend__text--2nd">
-            <h3 class="third-title endtoend__subtitle" >Mobile, Web & Enterprise </h3>
+            <h3 class="title-tertiary endtoend__subtitle" >Mobile, Web & Enterprise </h3>
             <ul class="endtoend__list">
               <li>Product strategy and planning</li>
               <li>UX/UI design</li>
@@ -91,11 +91,11 @@
               <li>Hybrid app development</li>
             </ul>
           </div>
-          <img class="endtoend__img endtoend__img--right center-block"  src="./assets/images/sec2_img2.jpg" alt="we handle"/>
+          <img class="endtoend__img endtoend__img--right center-self"  src="./assets/images/sec2_img2.jpg" alt="we handle"/>
         </div>
       
         <div class="center-content-mid">
-          <a class="button-base button-primary endtoend__button" type="button"  />GET IN TOUCH</a>
+          <a class="btn-base btn-primary endtoend__button" type="button"  />GET IN TOUCH</a>
         </div>
       </div>
       
@@ -110,13 +110,12 @@
 
     <section class="explore container">
       <div class="explore__1">
-        <h2 class="main-title explore__title">Explore our work</h2>
-        <h3 class="third-title explore__subtitle">Results for innovative companies</h3>
+        <h2 class="title-primary explore__title">Explore our work</h2>
+        <h3 class="title-tertiary explore__subtitle">Results for innovative companies</h3>
         <p class="explore__text">We help businesses ideate, strategize, iterate, and launch their Mobile Applications while keeping cost, timelines and objectives in mind.</p>
-        <a class="button-base button-secondary explore__3 center-block display-mid" type="button"  />EXPLORE</a>
       </div>
-      <img class="explore__2 center-block" src="./assets/images/sec3_img1.jpg" alt="cellphone example"/>
-      <a class="button-base button-secondary explore__3 center-block display-small" type="button"  />EXPLORE</a>
+      <img class="explore__2 center-self" src="./assets/images/sec3_img1.jpg" alt="cellphone example"/>
+      <a class="btn-base btn-secondary explore__3 center-self" type="button"  />EXPLORE</a>
     </section>
 
 
@@ -124,7 +123,7 @@
     <section class="collaborative">
       <img class="collaborative__img" src="./assets/images/sec3_img2.jpg" alt="collaboration"/>
       <div class="container">
-        <h2 class="main-title collaborative__title">Collaborative & Scientific Approach</h2>
+        <h2 class="title-primary collaborative__title">Collaborative & Scientific Approach</h2>
         <p class="collaborative__text">Our custom agile process puts you in control; reduces risk, increases transparency between our team and yours, and allows you to hit even aggressive timelines.</p>  
       </div>
     </section>
@@ -132,11 +131,11 @@
 
 
     <section class="grid-wrapper container">
-      <div id="section4" class="grid">
+      <div class="grid">
         <div class="grid__block">
           <div class="grid__titleblock">
             <img class="grid__icon" src="./assets/svg/hand_piece.svg" alt="solutions"/>
-            <h2 class="grid__title third-title">Enterprise Solutions</h2>
+            <h2 class="grid__title title-tertiary">Enterprise Solutions</h2>
           </div>
           <p class="grid__text">We address all design and technical challenges, identify any risk areas and plan for them, and create a sound foundation for the product based on cost, timeline, and technology. We deliver your product blueprint, complete with the app's architecture.</p>
         </div>
@@ -144,7 +143,7 @@
         <div class="grid__block">
           <div class="grid__titleblock">
             <img class="grid__icon" src="./assets/svg/gear.svg" alt="gear"/>
-            <h2 class="grid__title third-title">Web & Mobile Development</h2>
+            <h2 class="grid__title title-tertiary">Web & Mobile Development</h2>
           </div>
           <p class="grid__text">This is where the coding happens. Our team plans and delivers in sprints - Cross-functional team rallies around the sprint goals to deliver them on time and within budget. Each sprint results in an increment which is a potentially shippable product.</p>
         </div>
@@ -152,7 +151,7 @@
         <div class="grid__block">
           <div class="grid__titleblock">
             <img class="grid__icon" src="./assets/svg/design.svg" alt="design"/>
-            <h2 class="grid__title third-title">Design</h2>
+            <h2 class="grid__title title-tertiary">Design</h2>
           </div>
           <p class="grid__text">Design gives a more complete story of the app, encompassing wireframes, storyboards,  user flows, and prototyping.</p>
         </div>
@@ -160,7 +159,7 @@
       </div>
 
       <div class="center-content-mid">
-        <a class="button-base button-primary collaborative__button" type="button"  />GET IN TOUCH</a>
+        <a class="btn-base btn-primary collaborative__button" type="button"  />GET IN TOUCH</a>
       </div>
     </section>
   
@@ -168,7 +167,7 @@
 
 
     <section class="brands-and-cards ">
-      <h2 class="main-title trust-bg center-content container-big-only">Some of the Brands that Trust Us</h2>  
+      <h2 class="title-primary trust-bg center-content container-big-only">Some of the Brands that Trust Us</h2>  
       
       <div class="brands">
         <div class="brand__slider">
@@ -209,7 +208,7 @@
 
 
     <section class="industry">
-      <h2 class="main-title center-content">Explore the Industries we are currently serving</h2>
+      <h2 class="title-primary center-content">Explore the Industries we are currently serving</h2>
 
       <div class="industry-slider">
         <div class="industry__card">
@@ -237,9 +236,9 @@
     
 
 
-    <section class="partners">  
-      <h2 class="main-title center-content partner-title">Partnerships and Recognitions</h2>
-      <div class="partner-slider">
+    <section class="partner">  
+      <h2 class="title-primary center-content">Partnerships and Recognitions</h2>
+      <div class="partner__slider">
         <img class="partner__logo" src="./assets/svg/partnerAWS.svg" alt="partner aws"/>
         <img class="partner__logo " src="./assets/svg/partnerClutch.svg" alt="partner clutch"/>
         <img class="partner__logo" src="./assets/svg/partnerShop.svg" alt="partner shop"/>
@@ -291,9 +290,9 @@
         <p class="footer__info">© 2007 -2020 Koombea, Inc.  All Rights Reserved Privacy policy   /   Site map </p>
       </div>
 
-      <button onclick="toTop()" class="footer__top"><img src="./assets/svg/arrow.svg"></button>
+      <button class="footer__top js-top"><img src="./assets/svg/arrow.svg"></button>
 
-      <div class="ending"></div>
+      <div class="clear-both"></div>
     </div>
   </footer>
 </body>

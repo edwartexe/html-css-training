@@ -1,30 +1,38 @@
-window.onscroll = function() {scrollFunction()};
 
-function myFunction() {
-  let burger = document.getElementsByClassName("nav__menu-toggle")[0];
-  let burgerMenu = document.getElementsByClassName("nav__menu")[0];
-  let mainnav = document.getElementsByClassName("nav")[0];
-  burger.classList.toggle("open");
-  burgerMenu.classList.toggle("open");
-  mainnav.classList.toggle("open");
-}
-
-function toTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-
-function scrollFunction() {
-  let mainnav = document.getElementsByClassName("nav")[0];
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    mainnav.classList.add("fixed");
-  } else {
-    mainnav.classList.remove("fixed");
-  }
-}
 
 $(document).ready(function(){
+
+  document.querySelector(".js-nav-toggle").addEventListener("click",toggleMenuFunction);
+  document.querySelector(".js-top").addEventListener("click",toTop);
+  window.onscroll = function() {scrollFunction()};
+
+  function toggleMenuFunction() {
+    let burger = document.querySelector(".nav__menu-toggle");
+    let burgerMenu = document.querySelector(".nav__menu");
+    let mainnav = document.querySelector(".nav");
+    burger.classList.toggle("open");
+    burgerMenu.classList.toggle("open");
+    mainnav.classList.toggle("open");
+  }
+
+  function toTop() {
+    if(window.scrollTo){
+      window.scrollTo({top:0,behavior:"smooth"})
+    }else{
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  }
+
+  function scrollFunction() {
+    let mainnav = document.getElementsByClassName("nav")[0];
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      mainnav.classList.add("fixed");
+    } else {
+      mainnav.classList.remove("fixed");
+    }
+  }
+
   $('.brand__slider').slick({
     variableWidth: true,
     centerMode: true,
@@ -99,7 +107,7 @@ $(document).ready(function(){
     ]
   });
 
-  $('.partner-slider').slick({
+  $('.partner__slider').slick({
     variableWidth: true,
     centerMode: true,
     arrows: false,

@@ -26,7 +26,14 @@
   font-display: swap;
 }
 
-* {
+h1,
+h2,
+h3,
+p,
+a,
+ul,
+li,
+button {
   font-family: 'GT Walsheim','Didact Gothic' , sans-serif;
 }
 
@@ -40,11 +47,35 @@ p {
   color: #26666B;
 }
 
+.title-primary {
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 106%;
+  letter-spacing: -0.533333px;
+  color: #00343D;
+}
+
+.title-secondary {
+  font-weight: bold;
+  color: #00343D;
+  font-size: 1.5em;
+  line-height:  108%;
+  letter-spacing: -0.4px;
+}
+
+.title-tertiary {
+  font-weight: bold;
+  font-size: 1.25em;
+  line-height: 120%;
+  letter-spacing: -0.3333333333px;
+  color: #00343D;
+}
+
 .center-content {
   text-align: center;
 }
 
-.center-block {
+.center-self {
   margin: 0 auto;
   display: block;
 }
@@ -54,7 +85,89 @@ p {
   margin:0 auto;
   position: relative;
 }
-/*--------------------------------seccion NAV---------------------------------*/
+
+.flex {
+  display: flex;
+}
+
+.flex--between {
+  justify-content: space-between;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.width100 {
+  width:100%;
+}
+
+.display-none {
+  display: none;
+}
+
+.clear-both {
+  clear:both
+}
+
+/*-------------------------------buttons------------------*/
+.btn-base {
+  position: relative;
+  padding: 14px 66px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: -0.3px;
+  color: #00343D;
+  border:0;
+  border-radius: 35px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: #0BD8A2;
+}
+
+.btn-primary:hover {
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #DAFFF5;
+}
+.btn-secondary:hover {
+  background-color: #0BD8A2;
+}
+
+.btn-primary:focus, 
+.btn-secondary:focus {
+  color: #00343D;
+  background-color: #D3DFE1;
+}
+
+.btn-header {
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.204382));
+  background-color: #fff;
+}
+
+.btn-header:hover {
+  background-color: #00343D;
+  color:#fff;
+  filter: none;
+}
+
+.btn-header:focus {
+  background-color: #26666B;
+  color:#00343D;
+  filter: none;
+}
+
+/* -------------------------------END buttons --------------------------------*/
+
+/*--------------------------------section NAV---------------------------------*/
 
 .nav {
   width: 100%;
@@ -62,15 +175,9 @@ p {
   padding-top: 26px;
   padding-bottom: 26px;
   z-index: 10;
-  /*position: absolute;*/
   position: fixed;
   transition: height background 0.25s ease-out;
   overflow: hidden;
-}
-
-.container--nav {
-  display: flex;
-  justify-content: space-between;
 }
 
 .nav.open {
@@ -98,8 +205,6 @@ p {
   filter: none;
 }
 
-
-
 .nav__logo {
   position: relative;
   z-index: 12;
@@ -115,22 +220,18 @@ p {
   z-index: 12;
 }
 
-
 .nav__menu-toggle {
   display: block;
   position: relative;
   -webkit-user-select: none;
   user-select: none;
-  background: none;
   border: 0 transparent;
+  background: none;
   outline: none;
   cursor: pointer;
   width: 24px;
   height: 24px;
   padding: 15px 0;
-}
-.nav__menu-toggle.open {
-  background: #fff;
 }
 
 .nav__menu-toggle span {
@@ -147,14 +248,6 @@ p {
   background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
   opacity 0.55s ease;
 }
-
-/*.nav__menu-toggle span:first-child {
-  transform-origin: 0% 0%;
-}
-
-.nav__menu-toggle span:nth-last-child(2) {
-  transform-origin: 0% 100%;
-}*/
 
 .nav__menu-toggle.open span:first-child {
   transform: rotate(45deg) translate(0px, 0px);
@@ -214,11 +307,10 @@ p {
 }
 
 
-.nav__menu .contactLink {
+.nav__contact {
   margin-top: 50px;
 }
-
-.nav__menu .contactLink a {
+.nav__contact a {
   font-weight: bold;
   background: #0BD8A2;
   border-radius: 50px;
@@ -229,11 +321,7 @@ p {
   transform: none;
 }
 
-.nav__title {
-  display: none;
-}
-
-/*------phone tooltip-----*/
+/*------------------------phone tooltip--------------------*/
 .nav__phone .nav__tooltip {
   visibility: hidden;
   width: 120px;
@@ -261,49 +349,19 @@ p {
   border-style: solid;
   border-color: transparent transparent transparent black;
 }
-/*-----end phone tooltip-----*/
+/*-----END phone tooltip-----*/
 
-/*-------------fin seccion de NAV --------------------*/
+/*-------------END section NAV --------------------*/
 
+
+/*-------------- section banner -----------------------*/
 .banner {
   text-align: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: center;
-  background-position-y: bottom;
   padding-top: 140px;
 }
 
 .banner__title{
   margin: 70px 0 0 0;
-}
-
-.banner__ring {
-  display: none;
-}
-
-.main-title {
-  font-weight: bold;
-  font-size: 2em;
-  line-height: 106%;
-  letter-spacing: -0.533333px;
-  color: #00343D;
-}
-
-.secondary-title {
-  font-weight: bold;
-  color: #00343D;
-  font-size: 1.5em;
-  line-height:  108%;
-  letter-spacing: -0.4px;
-}
-
-.third-title {
-  font-weight: bold;
-  font-size: 1.25em;
-  line-height: 120%;
-  letter-spacing: -0.3333333333px;
-  color: #00343D;
 }
 
 .banner__img {
@@ -316,80 +374,21 @@ p {
   margin-top:40px;
 }
 
-
+/*-----------------------END section banner ---------------------*/
+/*-----------------------section whatwedo ---------------------*/
 .whatwedo__subtitle{
   margin: 33px 0 0 0;
 }
-
-
-/*-----------------------------------------------buttons*/
-.button-base {
-  position: relative;
-  /*width: 211px;*/
-  padding: 14px 66px;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  letter-spacing: -0.3px;
-  color: #00343D;
-  border:0;
-  border-radius: 35px;
-  text-transform: uppercase;
-  cursor: pointer;
-  display: inline-block;
-}
-
-.button-primary {
-  background-color: #0BD8A2;
-}
-
-.button-primary:hover {
-  color: #fff;
-}
-
-.button-secondary {
-  background-color: #DAFFF5;
-}
-.button-secondary:hover {
-  background-color: #0BD8A2;
-}
-
-.button-primary:focus, 
-.button-secondary:focus {
-  color: #00343D;
-  background-color: #D3DFE1;
-}
-
-.button-header {
-  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.204382));
-  background-color: #fff;
-}
-
-.button-header:hover {
-  background-color: #00343D;
-  color:#fff;
-  filter: none;
-}
-
-.button-header:focus {
-  background-color: #26666B;
-  color:#00343D;
-  filter: none;
-}
-
-.endtoend__button {
-  width: -webkit-fill-available;
-}
-/* ---------------------------------end buttons ----*/
+/*-----------------------END section whatwedo ---------------------*/
+/*-----------------------section end to end --------------------------*/
 
 .endtoend-title {
   margin-top: 62px;
   margin-bottom: 40px;
-  /*background-image: url("../svg/endtoend.svg");*/
+  /*background-image: url("../svg/endtoend.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center;*/
 }
 
 .endtoend__subtitle {
@@ -421,22 +420,19 @@ p {
   list-style: none;
 }
 
-.collaborative__img {
-  display: block;
-  object-fit: contain;
-  width: 100%;
-  height: 283px;
-  margin:0 auto;
+.endtoend__button {
+  width: 222px;
 }
 
+/*-----------------------END section end to end --------------------*/
 .division-line {
   width: 100%;
   height: 1px;
   display: block;
   background-color: #D3DFE1;
-  /*border: 1px solid #D3DFE1;*/
   margin: 79px 0 56px 0;
 }
+/*-----------------------section explore ---------------------*/
 
 .explore {
   margin-bottom:40px;
@@ -456,19 +452,31 @@ p {
   width:250px;
 }
 
-.display-small {
-  display: block;
-}
-.display-mid {
-  display: none;
-}
+/*-----------------------END section explore ---------------------*/
+
+/*-----------------------section collaborative ---------------------*/
 
 .collaborative__title {
   text-align: center;
   margin-top: 38px;
 }
 
+.collaborative__button {
+  width:222px;
+  margin-top: 32px;
+}
 
+.collaborative__img {
+  display: block;
+  object-fit: contain;
+  width: 100%;
+  height: 283px;
+  margin:0 auto;
+}
+
+
+/*-----------------------END section collaborative ---------------------*/
+/*-----------------------section icon grid ---------------------*/
 .grid__block {
   margin-top: 31px;
 }
@@ -491,28 +499,20 @@ p {
   letter-spacing: -0.333333px;
   margin:0 0 0 12px;
 }
-
-.collaborative__button {
-  width:-webkit-fill-available;
-  margin-top: 32px;
-}
-/*------------*/
-
-.trust-bg {
-  /*background-image: url("../svg/sec5_background.svg");*/
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  margin:54px auto 40px auto;
-  width: 324px;
-}
-
-
-/*-----------------------slider--------------------------*/
+/*-----------------------END section icon grid ---------------------*/
 .division-line--too {
   margin:46px 0;
 }
+/*-----------------------section brands --------------------------*/
 
+.trust-bg {
+  /*background-image: url("../svg/sec5_background.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;*/
+  margin:54px auto 40px auto;
+  width: 324px;
+}
 
 .brand__logo,
 .partner__logo {
@@ -619,10 +619,11 @@ p {
 }
 
 
-.partner-title {
+.partner {
   margin-top:40px;
+}
 
-}.partner-slider {
+.partner__slider {
   margin: 48px auto 71px auto;
 }
 
@@ -637,8 +638,6 @@ p {
 
 .footer__logo {
   margin-bottom: 43px;
-  display: inline-block;
-  width: -webkit-fill-available;
 }
 
 .footer__koombea {
@@ -677,7 +676,6 @@ p {
 
 .footer__bottom {
   margin:53px auto 0 auto;
-  clear: both;
   text-align: center;
 }
 
@@ -742,23 +740,23 @@ p {
     text-align: center;
   }
 
-  .main-title {
+  .title-primary {
     font-size: 3em;
     line-height: 104%;
     letter-spacing: -0.8px;
   }
-  .secondary-title {
+  .title-secondary {
     font-size: 2em;
     line-height: 106%;
     letter-spacing: -0.533333px;
   }
-  .third-title {
+  .title-tertiary {
     font-size: 2em;
     line-height:  106%;
     letter-spacing: -0.533333px;
   }
 
-  /*------------------------------------nav------------------------------------------*/
+  /*--------------section NAV----------------------*/
   .nav {
     padding-top: 32px;
   }
@@ -769,20 +767,28 @@ p {
   .nav__phone {
     margin: 12px 0;
   }
-  /*------------------------------------header------------------------------------------*/
+  
   .nav__menu {
     margin: -32px 0 0 0; /*nega*/
   }
+
+  /*-------------END section NAV --------------------*/
+  /*-------------- section banner -----------------------*/
+
   .banner {
     text-align: left;
     position: relative;
     background-image: url("../images/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: bottom;
   }
 
   .banner__title {
     width: 57%;
     margin:0;
-    min-height: 200px;
+    height: 200px;
   }
 
   .banner__img {
@@ -793,15 +799,6 @@ p {
     width: auto;
   }
 
-  .banner__ring {
-    display: block;
-    width: auto;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0.5;
-  }
-
   .banner__btn {    
     width: 170px;
     text-align: left;
@@ -809,6 +806,8 @@ p {
     margin-bottom: 68px;
     margin-top: 41px;
   }
+  /*-----------------------END section banner ---------------------*/
+  /*-----------------------section whatwedo ---------------------*/
 
   .whatwedo__p {
     width: 642px;
@@ -819,10 +818,17 @@ p {
   .whatwedo__subtitle {
     margin-top:106px;
   }
-  /* ----------------------------------body -------------------------------------------*/
+
+  /*-----------------------END section whatwedo ---------------------*/
+  /*-----------------------section end to end --------------------------*/
   
-  .section-margin {
-    margin-top:65px;
+  .endtoend-title {
+    background-image: url("../svg/endtoend_big.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 65px auto 0 auto;
+    width: 658px;
   }
 
   .endtoend__row {
@@ -831,21 +837,6 @@ p {
     margin-top: 46px;
     justify-content: center;
   }
-
-  .endtoend__row.reverse {
-    flex-direction: row-reverse;
-  }
-
-  .endtoend-title {
-    background-image: url("../svg/endtoend_big.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 65px auto 0 auto;
-    width: 658px;
-
-  }
-
 
   .endtoend__img {
     width: 283px;
@@ -884,25 +875,43 @@ p {
   }
 
 
+  /*-----------------------END section end to end --------------------------*/
 
   .division-line {
     margin: 40px 0 61px 0;
   }
 
-
+  /*-----------------------section explore ---------------------*/
 
   .explore {
     position: relative;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 62px;
+    height: 500px;
   }
 
   .explore__1 {
     text-align: left;
     width: 333px;
-    height: 402px;
-    order:1;
+    /*height: 304px;*/
+  }
+
+  .explore__3 {
+    order:2;
+    margin:54px 0 0 0;
+    width: 115px;
+  }
+
+  .explore__2 {
+    height: 448px;
+    width: 376px;
+    object-fit: contain;
+    order: 3;
+    flex: 1 0 34%;
+    margin:0;
   }
 
   .explore__title {
@@ -919,38 +928,41 @@ p {
     line-height: 28px;
   }
 
-  .explore__2 {
-    height: 448px;
-    width: 376px;
-    object-fit: contain;
-    order: 3;
-    margin:0;
-  }
+  
 
-  .explore__3 {
-    order:2;
-    float: left;
-  }
+  /*-----------------------END section explore ---------------------*/
 
-  .display-small {
-    display: none;
-  }
-  .display-mid {
-    display: block;
-  }
-
+  /*-----------------------section collaborative ---------------------*/
   .collaborative {
     text-align: center;
-    clear: both;
+  }
+  .collaborative__button {
+    width:234px;
+  }
+  .collaborative__img {
+    width: 618px;
+    height: 418px;
+  }
+  .collaborative__title {
+    width: 640px;
+    margin: 0 auto;
+    margin-top: 31px;
   }
 
+  .collaborative__text {
+    width: 640px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  /*-----------------------END section collaborative ---------------------*/
+
+  /*-----------------------section icon grid ---------------------*/
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
   .grid__block {
-    /*flex: 1 0 34%;*/
     width: 290px;
     margin: 45px auto 0 auto;
   }
@@ -976,30 +988,16 @@ p {
     line-height: 28px;
   }
 
-  .collaborative__button {
-    width:234px;
-  }
-  .collaborative__img {
-    width: 618px;
-    height: 418px;
-  }
-  .collaborative__title {
-    width: 640px;
-    margin: 0 auto;
-    margin-top: 31px;
-  }
-
-  .collaborative__text {
-    width: 640px;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
+  /*-----------------------END section icon grid ---------------------*/
+  /*-----------------------section brands --------------------------*/
 
   .trust-bg {
     /*background-image: url("../svg/endtoend_big.svg");*/
     width: 636px;
     margin:86px auto 42px auto;
   }
+
+  /*-----------------------END section brands --------------------------*/
   /*------------------------------------footer-----------------------*/
 
   .footer {
@@ -1010,15 +1008,14 @@ p {
   }
 
   .footer__flex {
-    width:60%;
     float:right;
+    width:60%;
   }
 
   .footer__logo,
   .footer__bottom {
     float:left;
     width: 30%;
-    clear:none;
     text-align: left;
     margin-bottom: 0;
   }
@@ -1086,10 +1083,6 @@ p {
     top:0;
   }
 
-  .ending {
-    clear:both
-  }
-
 }
 
 
@@ -1124,28 +1117,23 @@ p {
       margin: 0 auto;
     }
 
-    .main-title {
+    .title-primary {
       font-size: 3em;
       line-height: 104%;
       letter-spacing: -0.8px;
     }
-    .secondary-title {
+    .title-secondary {
       font-size: 2em;
       line-height: 106%;
       letter-spacing: -0.533333px;
     }
-    .third-title {
+    .title-tertiary {
       font-size: 2em;
       line-height:  106%;
       letter-spacing: -0.533333px;
     }
 
-    /*------------------------------------nav------------------------------------------*/
-
-    .nav {
-      height: auto;
-      position: absolute;
-    }
+    /*--------------------------------section NAV---------------------------------*/
 
     .nav__menu-toggle {
       display: none;
@@ -1170,16 +1158,17 @@ p {
     .nav__menu-toggle {
       display: none;
     }
-    .nav__menu .contactLink a {
-      background: none;
-      padding: 0;
-    }
-    .nav__menu .contactLink {
+    .nav__contact {
       margin-top: 0;
       padding-left: 40px;
     }
+    .nav__contact a {
+      background: none;
+      padding: 0;
+    }
+    /*--------------------------------END section NAV---------------------------------*/
 
-    /*------------------------------------header------------------------------------------*/
+    /*-------------------------------- section banner--------------------------*/
     .banner {
       background-image: url("../images/header-big.png");
       padding-top: 218px;
@@ -1199,10 +1188,11 @@ p {
       font-size: 3.75em;
       line-height: 103%;
       letter-spacing: -1px; 
-      min-height:186.12px;
+      height:186.12px;
     }
 
-    /*-----------------------------------body------------------------*/
+    /*-----------------------END section banner--------------------------*/
+    /*-----------------------section end to end --------------------------*/
 
     .endtoend {
       margin-bottom: 53px;
@@ -1264,11 +1254,11 @@ p {
       padding: 14px 56px;
     }
 
-
-
+    /*-----------------------END section end to end --------------------------*/
     .division-line {
       margin: 114px 0 60px 0;
     } 
+    /*-----------------------section explore --------------------------*/
 
     .explore__1 {
       width: 390px;
@@ -1287,7 +1277,8 @@ p {
       margin-left: 101px;
     } 
 
-
+    /*-----------------------END section explore --------------------------*/
+    /*-----------------------section collaborative --------------------------*/
     .collaborative__img {
       width: 790px;
       height: 535px;
@@ -1301,38 +1292,33 @@ p {
       width: 100%;
     }
 
-    .grid {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-
-
-    .grid__block {
-      margin: 55px auto 0 auto;
-    }
-
     .collaborative__button {
       width: 178px;
       margin-top: 48px;
     }
-    /* ---------------------sliders -----------------------------------*/
+    /*-----------------------END section collaborative --------------------------*/
+    /*-----------------------section icon grid ---------------------*/
+    .grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
 
+    .grid__block {
+      margin: 55px auto 0 auto;
+    }
+    /*-----------------------END section icon grid ---------------------*/
+    /* ---------------------section brands -----------------------------*/
     .trust-bg {
       margin:100px auto 80px auto;
     }
-    
+    /* ---------------------END section brands -----------------------------*/
     /*------------------------------------footer-----------------------*/
 
     .footer__logo,
     .footer__bottom {
-      float:left;
       width: 50%;
-      clear:none;
-      text-align: left;
-      margin-bottom: 0;
     }
 
     .footer__flex {
-      float:right;
       width: 50%;
     } 
 
