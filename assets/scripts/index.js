@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
 
   document.querySelector(".js-nav-toggle").addEventListener("click",toggleMenuFunction);

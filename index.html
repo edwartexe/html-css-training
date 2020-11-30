@@ -6,21 +6,17 @@
   <meta name = "keywords" content = "koombea, html, css, javascript" />
   <meta name = "description" content = "Training how to be a better front end." />
   <meta name="robots" content="noindex" />
-  <link rel="stylesheet" href="./assets/styles/styles.css">
   <link rel="icon" type="image/png" href="./assets/svg/logo_mini_green.svg">
-  <script type="text/javascript" src="./assets/scripts/index.js" defer></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+  <link rel="stylesheet" href="./assets/styles/styles.css"/>
 </head>
 <body>
 
   <header class="nav">
     <div class="container flex flex--between">
-      <button class="nav__menu-toggle js-nav-toggle">
+      <button class="nav__menu-toggle display-none-lg js-nav-toggle">
         <span></span>
         <span></span>
         <span></span>
@@ -28,17 +24,19 @@
       <picture class="nav__logo">
         <source media="(min-width:834px)" srcset="./assets/svg/logo_big.svg">
         <source media="(min-width:0px)" srcset="./assets/svg/logo_mini_green.svg">
-        <img src="./assets/svg/logo_mini_green.svg" alt="Koombea" style="width:auto;">
+        <img src="./assets/svg/logo_mini_green.svg" alt="Koombea">
       </picture>
       <nav class="nav__menu">
         <h2 class="display-none">Site Navigation</h2>
-        <li><a href="#news">Home</a><span></span></li>
-        <li><a href="#about">About</a><span></span></li>
-        <li><a href="#services">Services</a><span></span></li>
-        <li><a href="#work">Our Work</a><span></span></li>
-        <li><a href="#blog">Blog</a><span></span></li>
-        <li><a href="#career">Careers</a><span></span></li>
-        <li class="nav__contact"><a href="#contact">Contact</a></li>
+        <ul class="nav__list">
+          <li><a href="#news">Home</a><span></span></li>
+          <li><a href="#about">About</a><span></span></li>
+          <li><a href="#services">Services</a><span></span></li>
+          <li><a href="#work">Our Work</a><span></span></li>
+          <li><a href="#blog">Blog</a><span></span></li>
+          <li><a href="#career">Careers</a><span></span></li>
+          <li class="nav__contact"><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
       <a href="#contact" class="nav__phone">
         <img class="nav__phone-image" src="./assets/svg/phone-green.svg" alt="telefono"/>
@@ -57,20 +55,16 @@
       </div>
     </section>
 
-
-
     <section class="whatwedo container">
-      <h2 class="whatwedo__subtitle title-secondary center-content">What We Do</h2>
-      <p class="whatwedo__p center-content">We bring your app ideas to reality. <br/> We stand out for our top web and mobile app development skills, though, we are so much more than that, we are a genuine strategic business partner.</p>
+      <h2 class="whatwedo__subtitle title-secondary text-center">What We Do</h2>
+      <p class="whatwedo__p text-center">We bring your app ideas to reality. <br/> We stand out for our top web and mobile app development skills, though, we are so much more than that, we are a genuine strategic business partner.</p>
     </section>
-    
-
-
+   
     <section class="endtoend">
-      <h2 class="title-primary center-content endtoend-title container-big-only">End-to-end Application Development</h2>
+      <h2 class="title-primary text-center endtoend__title container-big-only">End-to-end Application Development</h2>
 
       <div class="container">
-        <div class="endtoend__row flex-row-reverse">
+        <div class="endtoend__row flex flex--center flex-row-reverse">
           <div class="entoend__text">
             <h3 class="title-tertiary endtoend__subtitle">You Manage The Business, We Handle The Application</h3>
             <p class="endtoend__subtext">We cover all the bits and pieces needed to develop a top-notch, innovative product, from strategy, to native apps, to the backend services. We code to very high standards and test continuously, which creates easy to maintain, high quality products.</p>
@@ -78,7 +72,7 @@
           <img class="endtoend__img center-self" src="./assets/images/sec2_img1.jpg" alt="you manage"/>
         </div>
       
-        <div class="endtoend__row">
+        <div class="endtoend__row flex flex--center ">
           <div class="entoend__text endtoend__text--2nd">
             <h3 class="title-tertiary endtoend__subtitle" >Mobile, Web & Enterprise </h3>
             <ul class="endtoend__list">
@@ -94,19 +88,13 @@
           <img class="endtoend__img endtoend__img--right center-self"  src="./assets/images/sec2_img2.jpg" alt="we handle"/>
         </div>
       
-        <div class="center-content-mid">
+        <div class="text-center-md">
           <a class="btn-base btn-primary endtoend__button" type="button"  />GET IN TOUCH</a>
         </div>
       </div>
-      
-      
     </section>
 
-
-
     <span class="division-line"></span>
-
-
 
     <section class="explore container">
       <div class="explore__1">
@@ -118,9 +106,7 @@
       <a class="btn-base btn-secondary explore__3 center-self" type="button"  />EXPLORE</a>
     </section>
 
-
-
-    <section class="collaborative">
+    <section class="collaborative text-center">
       <img class="collaborative__img" src="./assets/images/sec3_img2.jpg" alt="collaboration"/>
       <div class="container">
         <h2 class="title-primary collaborative__title">Collaborative & Scientific Approach</h2>
@@ -128,12 +114,10 @@
       </div>
     </section>
 
-
-
     <section class="grid-wrapper container">
       <div class="grid">
         <div class="grid__block">
-          <div class="grid__titleblock">
+          <div class="grid__titleblock flex--column-md">
             <img class="grid__icon" src="./assets/svg/hand_piece.svg" alt="solutions"/>
             <h2 class="grid__title title-tertiary">Enterprise Solutions</h2>
           </div>
@@ -141,7 +125,7 @@
         </div>
 
         <div class="grid__block">
-          <div class="grid__titleblock">
+          <div class="grid__titleblock flex--column-md">
             <img class="grid__icon" src="./assets/svg/gear.svg" alt="gear"/>
             <h2 class="grid__title title-tertiary">Web & Mobile Development</h2>
           </div>
@@ -149,7 +133,7 @@
         </div>
 
         <div class="grid__block">
-          <div class="grid__titleblock">
+          <div class="grid__titleblock flex--column-md">
             <img class="grid__icon" src="./assets/svg/design.svg" alt="design"/>
             <h2 class="grid__title title-tertiary">Design</h2>
           </div>
@@ -158,16 +142,13 @@
         <div></div>
       </div>
 
-      <div class="center-content-mid">
+      <div class="text-center-md">
         <a class="btn-base btn-primary collaborative__button" type="button"  />GET IN TOUCH</a>
       </div>
     </section>
-  
-
-
 
     <section class="brands-and-cards ">
-      <h2 class="title-primary trust-bg center-content container-big-only">Some of the Brands that Trust Us</h2>  
+      <h2 class="title-primary brands-and-cards__title text-center container-big-only">Some of the Brands that Trust Us</h2>  
       
       <div class="brands">
         <div class="brand__slider">
@@ -208,7 +189,7 @@
 
 
     <section class="industry">
-      <h2 class="title-primary center-content">Explore the Industries we are currently serving</h2>
+      <h2 class="title-primary text-center">Explore the Industries we are currently serving</h2>
 
       <div class="industry-slider">
         <div class="industry__card">
@@ -237,7 +218,7 @@
 
 
     <section class="partner">  
-      <h2 class="title-primary center-content">Partnerships and Recognitions</h2>
+      <h2 class="title-primary text-center">Partnerships and Recognitions</h2>
       <div class="partner__slider">
         <img class="partner__logo" src="./assets/svg/partnerAWS.svg" alt="partner aws"/>
         <img class="partner__logo " src="./assets/svg/partnerClutch.svg" alt="partner clutch"/>
@@ -255,7 +236,7 @@
         <img class="footer__koombea" src="./assets/svg/logo_big.svg" alt="logo"/>
       </div>
 
-      <div class="footer__flex">
+      <div class="footer__columns flex flex--between">
         <div class="footer__block">
           <h2 class="footer__title">Our Specialities</h2>
           <ul class="footer__list">
@@ -281,7 +262,7 @@
       <div class="footer__bottom">
         <p class="footer__call">Call us</p>
         <h2 class="footer__phoneno">+1-888-840-3252</h2>
-        <div class="footer__logos">
+        <div class="footer__logos flex flex--between">
           <img src="./assets/svg/facebook.svg" alt="facebook"/>
           <img src="./assets/svg/footer_generic.svg" alt="icon"/>
           <img src="./assets/svg/footer_generic.svg" alt="icon"/>
@@ -290,10 +271,14 @@
         <p class="footer__info">© 2007 -2020 Koombea, Inc.  All Rights Reserved Privacy policy   /   Site map </p>
       </div>
 
-      <button class="footer__top js-top"><img src="./assets/svg/arrow.svg"></button>
+      <button class="footer__top display-none-mb js-top"><img src="./assets/svg/arrow.svg"></button>
 
       <div class="clear-both"></div>
     </div>
   </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="./assets/scripts/index.js" defer></script>
 </body>
 </html>
