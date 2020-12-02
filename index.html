@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es">
+<head>
+  <title>Koombea - Training</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name = "keywords" content = "koombea, html, css, javascript" />
+  <meta name = "description" content = "Training how to be a better front end." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/png" href="./assets/svg/logo_mini_green.svg">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="./assets/styles/styles.css"/>
+</head>
+<body>
+
+  <header class="nav js-nav">
+    <div class="container flex flex--between">
+      <button class="nav__menu-toggle hide-desktop js-nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <picture class="nav__logo">
+        <source media="(min-width:834px)" srcset="./assets/svg/logo_big.svg">
+        <source media="(min-width:0px)" srcset="./assets/svg/logo_mini_green.svg">
+        <img src="./assets/svg/logo_mini_green.svg" alt="Koombea">
+      </picture>
+      <nav class="nav__menu js-nav-menu">
+        <h2 class="hide">Site Navigation</h2>
+        <ul class="nav__list">
+          <li><a href="#news">Home</a><span></span></li>
+          <li><a href="#about">About</a><span></span></li>
+          <li><a href="#services">Services</a><span></span></li>
+          <li><a href="#work">Our Work</a><span></span></li>
+          <li><a href="#blog">Blog</a><span></span></li>
+          <li><a href="#career">Careers</a><span></span></li>
+          <li class="nav__contact"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="tel:+13000000000" class="nav__phone">
+        <img class="nav__phone-image" src="./assets/svg/phone-green.svg" alt="telefono"/>
+        <span class="nav__tooltip">300 00 00 000</span>
+      </a>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="banner">
+      <div class="container">
+        <h1 class="banner__title primary-title">The Leading Mobile & Web App Development Partner</h1>
+        <a class="banner__btn btn btn--header" type="button"  />GET IN TOUCH</a>
+        <img class="banner__img" src="./assets/images/header_img.png" alt="banner image"/>
+      </div>
+    </section>
+
+    <section class="whatwedo container">
+      <h2 class="whatwedo__subtitle secondary-title center-text">What We Do</h2>
+      <p class="whatwedo__p center-text">We bring your app ideas to reality. <br/> We stand out for our top web and mobile app development skills, though, we are so much more than that, we are a genuine strategic business partner.</p>
+    </section>
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="./assets/scripts/index.js" defer></script>
+</body>
+</html>
