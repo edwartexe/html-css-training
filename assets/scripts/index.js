@@ -1,35 +1,35 @@
-$(document).ready(function(){
+function toggleMenuFunction () {
+  let burger = document.querySelector(".js-nav-toggle");
+  let burgerMenu = document.querySelector(".njs-nav-menu");
+  let mainNav = document.querySelector(".js-nav");
+  burger.classList.toggle("open");
+  burgerMenu.classList.toggle("open");
+  mainNav.classList.toggle("open");
+}
 
-  document.querySelector(".js-nav-toggle").addEventListener("click",toggleMenuFunction);
-  document.querySelector(".js-top").addEventListener("click",toTop);
-  window.onscroll = function() {scrollFunction()};
-
-  function toggleMenuFunction() {
-    let burger = document.querySelector(".nav__menu-toggle");
-    let burgerMenu = document.querySelector(".nav__menu");
-    let mainnav = document.querySelector(".nav");
-    burger.classList.toggle("open");
-    burgerMenu.classList.toggle("open");
-    mainnav.classList.toggle("open");
+function toTop () {
+  if (window.scrollTo) {
+    window.scrollTo( {top:0, behavior:"smooth"} )
+  }else{
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
+}
 
-  function toTop() {
-    if(window.scrollTo){
-      window.scrollTo({top:0,behavior:"smooth"})
-    }else{
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
+function scrollFunction () {
+  let mainNav = document.getElementsByClassName("nav")[0];
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    mainNav.classList.add("fixed");
+  } else {
+    mainNav.classList.remove("fixed");
   }
+}
 
-  function scrollFunction() {
-    let mainnav = document.getElementsByClassName("nav")[0];
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      mainnav.classList.add("fixed");
-    } else {
-      mainnav.classList.remove("fixed");
-    }
-  }
+$(document).ready(function () {
+
+  document.querySelector(".js-nav-toggle").addEventListener("click", toggleMenuFunction);
+  document.querySelector(".js-top").addEventListener("click", toTop);
+  window.onscroll = scrollFunction;
 
   $('.brand__slider').slick({
     variableWidth: true,
